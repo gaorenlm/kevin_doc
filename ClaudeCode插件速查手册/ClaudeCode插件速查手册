@@ -1,0 +1,2683 @@
+---
+tags:
+  - claude-code
+  - plugins
+  - reference
+date: 2026-07-07
+type: reference
+---
+
+# claude-plugins-official 全插件目录（255个）
+
+> Anthropic 官方维护的 Claude Code 插件市场，截至 2026-07-07 共收录 **255 个插件**。
+> 每个插件均提供中文功能说明、使用示例和项目主页地址。
+> 共收录 **255** 个插件，以下索引表支持快速定位到任意插件的详细说明。
+
+## 插件快速定位索引
+
+> 点击插件名跳转到详细说明。图例：🏢 官方 | ✅ 认证 | 🌐 社区
+
+### 🔧 开发工具（109个）
+
+| #   | 插件                                                                                                                | 中文名称                                |     |
+| --- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------- | --- |
+| 1   | [[#agent-sdk-dev\|agent-sdk-dev]]                                                                                 | Agent SDK 开发工具包                     | 🏢  |
+| 2   | [[#agentforce-adlc\|agentforce-adlc]]                                                                             | Agentforce Agent 开发生命周期             | 🌐  |
+| 3   | [[#apollo-skills\|apollo-skills]]                                                                                 | Apollo GraphQL 开发技能包                | 🌐  |
+| 4   | [[#appwrite\|appwrite]]                                                                                           | Appwrite 后端开发平台                     | 🌐  |
+| 5   | [[#astronomer-data-agents\|astronomer-data-agents]]                                                               | Astronomer Apache Airflow 数据工程      | 🌐  |
+| 6   | [[#atomic-agents\|atomic-agents]]                                                                                 | Atomic Agents 框架开发                  | 🌐  |
+| 7   | [[#aws-agents\|aws-agents]]                                                                                       | AWS Agents 构建与部署                    | 🌐  |
+| 8   | [[#aws-agents-for-devsecops\|aws-agents-for-devsecops]]                                                           | AWS DevSecOps Agent                 | 🌐  |
+| 9   | [[#aws-amplify\|aws-amplify]]                                                                                     | AWS Amplify Gen 2 全栈开发              | 🌐  |
+| 10  | [[#aws-core\|aws-core]]                                                                                           | AWS 核心服务开发                          | 🌐  |
+| 11  | [[#aws-data-analytics\|aws-data-analytics]]                                                                       | AWS 数据分析（S3 Tables + Glue + Athena） | 🌐  |
+| 12  | [[#aws-dev-toolkit\|aws-dev-toolkit]]                                                                             | AWS 开发工具包（34 Skills + 11 Agents）    | 🌐  |
+| 13  | [[#aws-serverless\|aws-serverless]]                                                                               | AWS Serverless 开发                   | 🌐  |
+| 14  | [[#aws-startup-advisor\|aws-startup-advisor]]                                                                     | AWS 创业顾问                            | 🌐  |
+| 15  | [[#base44\|base44]]                                                                                               | Base44 全栈应用构建                       | 🌐  |
+| 16  | [[#boltz\|boltz]]                                                                                                 | Boltz 分子结构预测                        | 🌐  |
+| 17  | [[#buildkite\|buildkite]]                                                                                         | Buildkite CI/CD 集成                  | 🌐  |
+| 18  | [[#cds-mcp\|cds-mcp]]                                                                                             | SAP CAP 应用开发                        | 🌐  |
+| 19  | [[#chrome-devtools-mcp\|chrome-devtools-mcp]]                                                                     | Chrome DevTools 浏览器控制与调试            | 🌐  |
+| 20  | [[#circle-skills\|circle-skills]]                                                                                 | Circle 稳定币开发                        | 🌐  |
+| 21  | [[#clangd-lsp\|clangd-lsp]]                                                                                       | C/C++ 语言服务器 (clangd)                | 🏢  |
+| 22  | [[#code-modernization\|code-modernization]]                                                                       | 代码现代化改造（8阶段工作流）                     | 🏢  |
+| 23  | [[#codspeed\|codspeed]]                                                                                           | CodSpeed 性能测试全工具                    | 🌐  |
+| 24  | [[#confidence\|confidence]]                                                                                       | Spotify Confidence Feature Flags    | 🌐  |
+| 25  | [[#context7\|context7]]                                                                                           | 开发文档实时查询 (Upstash Context7)         | ✅   |
+| 26  | [[#csharp-lsp\|csharp-lsp]]                                                                                       | C# 语言服务器                            | 🏢  |
+| 27  | [[#data\|data]]                                                                                                   | Apache Airflow 数据工程                 | 🌐  |
+| 28  | [[#data-agent-kit-starter-pack\|data-agent-kit-starter-pack]]                                                     | Google Cloud 数据工程入门套件               | 🌐  |
+| 29  | [[#datarobot-agent-skills\|datarobot-agent-skills]]                                                               | DataRobot AI/ML 全流程技能包              | 🌐  |
+| 30  | [[#dominodatalab\|dominodatalab]]                                                                                 | Domino Data Lab 数据科学平台              | 🌐  |
+| 31  | [[#expo\|expo]]                                                                                                   | Expo React Native 开发                | 🌐  |
+| 32  | [[#fakechat\|fakechat]]                                                                                           | 本地测试聊天界面                            | ✅   |
+| 33  | [[#feature-dev\|feature-dev]]                                                                                     | 功能开发全流程（7阶段）                        | 🏢  |
+| 34  | [[#firecrawl\|firecrawl]]                                                                                         | Firecrawl 网页抓取与爬虫                   | 🌐  |
+| 35  | [[#forge-skills\|forge-skills]]                                                                                   | Atlassian Forge 应用开发                | 🌐  |
+| 36  | [[#frontend-design\|frontend-design]]                                                                             | 前端 UI 设计与实现                         | 🏢  |
+| 37  | [[#gopls-lsp\|gopls-lsp]]                                                                                         | Go 语言服务器 (gopls)                    | 🏢  |
+| 38  | [[#greptile\|greptile]]                                                                                           | 大规模代码库智能检索与理解                       | ✅   |
+| 39  | [[#huggingface-skills\|huggingface-skills]]                                                                       | HuggingFace AI 模型开发                 | 🌐  |
+| 40  | [[#idmp-plugin\|idmp-plugin]]                                                                                     | TDengine IDMP 数据管理平台                | 🌐  |
+| 41  | [[#jdtls-lsp\|jdtls-lsp]]                                                                                         | Java 语言服务器 (Eclipse JDT.LS)         | 🏢  |
+| 42  | [[#kotlin-lsp\|kotlin-lsp]]                                                                                       | Kotlin 语言服务器                        | 🏢  |
+| 43  | [[#laravel-boost\|laravel-boost]]                                                                                 | Laravel 框架专属增强                      | ✅   |
+| 44  | [[#liquid-lsp\|liquid-lsp]]                                                                                       | Shopify Liquid 语言服务器                | 🌐  |
+| 45  | [[#liquid-skills\|liquid-skills]]                                                                                 | Shopify Liquid 模板开发                 | 🌐  |
+| 46  | [[#lovable\|lovable]]                                                                                             | Lovable 应用构建平台                      | 🌐  |
+| 47  | [[#lua-lsp\|lua-lsp]]                                                                                             | Lua 语言服务器                           | 🏢  |
+| 48  | [[#lumen\|lumen]]                                                                                                 | Lumen 本地语义代码搜索                      | 🌐  |
+| 49  | [[#mcp-apps\|mcp-apps]]                                                                                           | MCP Apps SDK 开发                     | 🌐  |
+| 50  | [[#mcp-server-dev\|mcp-server-dev]]                                                                               | MCP 服务器开发工具包                        | 🏢  |
+| 51  | [[#mcp-tunnels\|mcp-tunnels]]                                                                                     | MCP 隧道（内网穿透连接）                      | 🏢  |
+| 52  | [[#mercadopago\|mercadopago]]                                                                                     | Mercado Pago 支付集成                   | 🌐  |
+| 53  | [[#mergify\|mergify]]                                                                                             | Mergify 合并队列与测试洞察                   | 🌐  |
+| 54  | [[#microsoft-docs\|microsoft-docs]]                                                                               | Microsoft 官方文档查询                    | 🌐  |
+| 55  | [[#migration-to-aws\|migration-to-aws]]                                                                           | GCP → AWS 迁移规划                      | 🌐  |
+| 56  | [[#mintlify\|mintlify]]                                                                                           | Mintlify 文档站点构建                     | 🌐  |
+| 57  | [[#netlify-skills\|netlify-skills]]                                                                               | Netlify 平台开发技能包                     | 🌐  |
+| 58  | [[#netsuite-suitecloud\|netsuite-suitecloud]]                                                                     | NetSuite SuiteCloud 开发              | 🌐  |
+| 59  | [[#nvidia-skills\|nvidia-skills]]                                                                                 | NVIDIA 加速计算（从 cuOpt 开始）             | 🌐  |
+| 60  | [[#oracle-ai-data-platform-workbench-databricks-migrator\|oracle-ai-data-platform-workbench-databricks-migrator]] | Oracle AIDP Databricks 迁移工具         | 🌐  |
+| 61  | [[#oracle-ai-data-platform-workbench-engineer-agent\|oracle-ai-data-platform-workbench-engineer-agent]]           | Oracle AIDP 工程师 Agent（37 Skills）    | 🌐  |
+| 62  | [[#oracle-ai-data-platform-workbench-spark-connectors\|oracle-ai-data-platform-workbench-spark-connectors]]       | Oracle AIDP Spark 连接器（18 Skills）    | 🌐  |
+| 63  | [[#outputai\|outputai]]                                                                                           | Output.ai 工作流开发工具包                  | 🌐  |
+| 64  | [[#php-lsp\|php-lsp]]                                                                                             | PHP 语言服务器 (Intelephense)            | 🏢  |
+| 65  | [[#pixeltable\|pixeltable]]                                                                                       | Pixeltable 多模态 AI 应用开发              | 🌐  |
+| 66  | [[#playground\|playground]]                                                                                       | 交互式可视化调试器                           | 🏢  |
+| 67  | [[#plugin-dev\|plugin-dev]]                                                                                       | 插件开发全流程工具包（7个专项技能）                  | 🏢  |
+| 68  | [[#postman\|postman]]                                                                                             | Postman API 全生命周期管理                 | 🌐  |
+| 69  | [[#preset-cli-skills\|preset-cli-skills]]                                                                         | Preset CLI（Apache Superset）         | 🌐  |
+| 70  | [[#pydantic-ai\|pydantic-ai]]                                                                                     | Pydantic AI 开发辅助                    | 🌐  |
+| 71  | [[#pyright-lsp\|pyright-lsp]]                                                                                     | Python 语言服务器 (Pyright)              | 🏢  |
+| 72  | [[#qodo-skills\|qodo-skills]]                                                                                     | Qodo 代码质量技能库                        | 🌐  |
+| 73  | [[#qt-development-skills\|qt-development-skills]]                                                                 | Qt C++/QML 开发技能包                    | 🌐  |
+| 74  | [[#quarkus-agent\|quarkus-agent]]                                                                                 | Quarkus Java 微服务开发                  | 🌐  |
+| 75  | [[#ralph-loop\|ralph-loop]]                                                                                       | 迭代式自引用 AI 循环（Ralph Wiggum 技术）       | 🏢  |
+| 76  | [[#rc\|rc]]                                                                                                       | RevenueCat 应用内购买配置                  | 🌐  |
+| 77  | [[#resend\|resend]]                                                                                               | Resend 邮件服务                         | 🌐  |
+| 78  | [[#revenuecat\|revenuecat]]                                                                                       | RevenueCat 应用内购买配置                  | 🌐  |
+| 79  | [[#rill\|rill]]                                                                                                   | Rill 商业智能平台                         | 🌐  |
+| 80  | [[#ruby-lsp\|ruby-lsp]]                                                                                           | Ruby 语言服务器                          | 🏢  |
+| 81  | [[#rust-analyzer-lsp\|rust-analyzer-lsp]]                                                                         | Rust 语言服务器 (rust-analyzer)          | 🏢  |
+| 82  | [[#sagemaker-ai\|sagemaker-ai]]                                                                                   | Amazon SageMaker AI 模型开发            | 🌐  |
+| 83  | [[#sanity\|sanity]]                                                                                               | Sanity 内容平台集成                       | 🌐  |
+| 84  | [[#sap-cds-mcp\|sap-cds-mcp]]                                                                                     | SAP CAP MCP 服务器                     | 🌐  |
+| 85  | [[#sap-fiori-mcp-server\|sap-fiori-mcp-server]]                                                                   | SAP Fiori MCP 服务器                   | 🌐  |
+| 86  | [[#sap-mdk-server\|sap-mdk-server]]                                                                               | SAP 移动开发工具包（MDK）MCP                 | 🌐  |
+| 87  | [[#serena\|serena]]                                                                                               | 语义代码分析 (Serena)                     | ✅   |
+| 88  | [[#servicenow-sdk\|servicenow-sdk]]                                                                               | ServiceNow 应用开发                     | 🌐  |
+| 89  | [[#shopify\|shopify]]                                                                                             | Shopify 开发者工具                       | 🌐  |
+| 90  | [[#shopify-ai-toolkit\|shopify-ai-toolkit]]                                                                       | Shopify AI 工具包（18 Skills）           | 🌐  |
+| 91  | [[#skill-creator\|skill-creator]]                                                                                 | Skill 可视化创建器                        | 🏢  |
+| 92  | [[#snowflake-cortex-code\|snowflake-cortex-code]]                                                                 | Snowflake Cortex Code 集成            | 🌐  |
+| 93  | [[#sourcegraph\|sourcegraph]]                                                                                     | Sourcegraph 代码搜索与理解                 | 🌐  |
+| 94  | [[#stripe\|stripe]]                                                                                               | Stripe 支付集成                         | 🌐  |
+| 95  | [[#sumup\|sumup]]                                                                                                 | SumUp 支付终端与在线支付                     | 🌐  |
+| 96  | [[#superpowers\|superpowers]]                                                                                     | Superpowers 开发方法论                   | 🌐  |
+| 97  | [[#swift-lsp\|swift-lsp]]                                                                                         | Swift 语言服务器 (SourceKit-LSP)         | 🏢  |
+| 98  | [[#tavily\|tavily]]                                                                                               | Tavily 实时 Web 数据 API                | 🌐  |
+| 99  | [[#teamcity-cli\|teamcity-cli]]                                                                                   | TeamCity CI/CD CLI 集成               | 🌐  |
+| 100 | [[#terraform\|terraform]]                                                                                         | Terraform IaC 集成 (HashiCorp 官方)     | ✅   |
+| 101 | [[#togetherai-skills\|togetherai-skills]]                                                                         | Together AI 平台开发技能                  | 🌐  |
+| 102 | [[#twilio-developer-kit\|twilio-developer-kit]]                                                                   | Twilio 通信开发工具包                      | 🌐  |
+| 103 | [[#typescript-lsp\|typescript-lsp]]                                                                               | TypeScript/JavaScript 语言服务器         | 🏢  |
+| 104 | [[#ui5\|ui5]]                                                                                                     | SAPUI5/OpenUI5 开发                   | 🌐  |
+| 105 | [[#ui5-modernization\|ui5-modernization]]                                                                         | UI5 现代化改造                           | 🌐  |
+| 106 | [[#ui5-typescript-conversion\|ui5-typescript-conversion]]                                                         | UI5 JavaScript → TypeScript 转换      | 🌐  |
+| 107 | [[#unreal-engine-skills-for-claude-code\|unreal-engine-skills-for-claude-code]]                                   | Unreal Engine 编辑器 MCP 控制            | 🌐  |
+| 108 | [[#wix\|wix]]                                                                                                     | Wix 站点与应用开发                         | 🌐  |
+| 109 | [[#zoom-plugin\|zoom-plugin]]                                                                                     | Zoom 集成开发插件                         | 🌐  |
+
+### 📋 效率协作（45个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 110 | [[#airtable\|airtable]] | Airtable 数据库与运营平台 | 🌐 |
+| 111 | [[#airwallex-agentos\|airwallex-agentos]] | Airwallex 全球金融基础设施 | 🌐 |
+| 112 | [[#apollo\|apollo]] | Apollo.io B2B 销售智能平台 | 🌐 |
+| 113 | [[#asana\|asana]] | Asana 项目管理集成 | ✅ |
+| 114 | [[#atlassian\|atlassian]] | Atlassian（Jira + Confluence）集成 | 🌐 |
+| 115 | [[#box\|box]] | Box 云存储集成 | 🌐 |
+| 116 | [[#carta-cap-table\|carta-cap-table]] | Carta 股权表管理 | 🌐 |
+| 117 | [[#carta-crm\|carta-crm]] | Carta CRM 投资者关系管理 | 🌐 |
+| 118 | [[#carta-investors\|carta-investors]] | Carta 投资者数据与分析 | 🌐 |
+| 119 | [[#circleback\|circleback]] | Circleback 会议与通讯上下文 | 🌐 |
+| 120 | [[#claude-code-setup\|claude-code-setup]] | Claude Code 环境自动化配置 | 🏢 |
+| 121 | [[#claude-md-management\|claude-md-management]] | CLAUDE.md 项目文档管理 | 🏢 |
+| 122 | [[#code-review\|code-review]] | 多智能体自动化代码审查 | 🏢 |
+| 123 | [[#code-simplifier\|code-simplifier]] | 代码简化与重构 | 🏢 |
+| 124 | [[#coderabbit\|coderabbit]] | CodeRabbit AI 代码审查 | 🌐 |
+| 125 | [[#commit-commands\|commit-commands]] | Git 工作流自动化 | 🏢 |
+| 126 | [[#cwc-makers\|cwc-makers]] | Code-with-Claude Makers 硬件集成 | 🏢 |
+| 127 | [[#desktop-commander\|desktop-commander]] | Desktop Commander 终端与文件全能操作 | 🌐 |
+| 128 | [[#discord\|discord]] | Discord 消息桥接 | ✅ |
+| 129 | [[#dropbox\|dropbox]] | Dropbox 云存储集成 | 🌐 |
+| 130 | [[#exa\|exa]] | Exa AI Web 搜索与深度研究 | 🌐 |
+| 131 | [[#github\|github]] | GitHub 深度集成 | ✅ |
+| 132 | [[#gitlab\|gitlab]] | GitLab DevOps 深度集成 | ✅ |
+| 133 | [[#hookify\|hookify]] | 零代码钩子创建器 | 🏢 |
+| 134 | [[#hunter\|hunter]] | Hunter.io 邮件发现与验证 | 🌐 |
+| 135 | [[#imessage\|imessage]] | iMessage 消息桥接（仅 macOS） | ✅ |
+| 136 | [[#intercom\|intercom]] | Intercom 客户服务平台集成 | 🌐 |
+| 137 | [[#legalzoom\|legalzoom]] | LegalZoom 法律文档审查 | 🌐 |
+| 138 | [[#linear\|linear]] | Linear 项目管理集成 | ✅ |
+| 139 | [[#lusha\|lusha]] | Lusha B2B 销售智能 | 🌐 |
+| 140 | [[#monday-crm\|monday-crm]] | monday.com CRM 管理 | 🌐 |
+| 141 | [[#notion\|notion]] | Notion 工作空间集成 | 🌐 |
+| 142 | [[#pigment\|pigment]] | Pigment 商业数据分析 | 🌐 |
+| 143 | [[#pr-review-toolkit\|pr-review-toolkit]] | PR 审查专业工具包（6大智能体） | 🏢 |
+| 144 | [[#project-artifact\|project-artifact]] | 项目状态页生成器 | 🏢 |
+| 145 | [[#save-to-spotify\|save-to-spotify]] | Spotify 音频内容发布 | 🌐 |
+| 146 | [[#session-report\|session-report]] | 会话使用报告（HTML 可视化） | 🏢 |
+| 147 | [[#slack\|slack]] | Slack 即时通讯集成 | 🌐 |
+| 148 | [[#spotify-ads-api\|spotify-ads-api]] | Spotify 广告 API 管理 | 🌐 |
+| 149 | [[#telegram\|telegram]] | Telegram 消息桥接 | ✅ |
+| 150 | [[#vibe-prospecting\|vibe-prospecting]] | Vibe Prospecting B2B 销售数据 | 🌐 |
+| 151 | [[#windsor-ai\|windsor-ai]] | Windsor.ai 多源数据集成（325+ 数据源） | 🌐 |
+| 152 | [[#youdotcom-agent-skills\|youdotcom-agent-skills]] | You.com Agent 搜索技能 | 🌐 |
+| 153 | [[#zapier\|zapier]] | Zapier 自动化集成（8000+ 应用连接） | 🌐 |
+| 154 | [[#zoominfo\|zoominfo]] | ZoomInfo B2B 销售情报平台 | 🌐 |
+
+### 🗄️ 数据库（34个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 155 | [[#alloydb\|alloydb]] | AlloyDB for PostgreSQL 集成 | 🌐 |
+| 156 | [[#alloydb-omni\|alloydb-omni]] | AlloyDB Omni 集成 | 🌐 |
+| 157 | [[#azure-cosmos-db-assistant\|azure-cosmos-db-assistant]] | Azure Cosmos DB 专家助手 | 🌐 |
+| 158 | [[#bigdata-com\|bigdata-com]] | Bigdata.com 金融研究平台 | 🌐 |
+| 159 | [[#bigquery-data-analytics\|bigquery-data-analytics]] | BigQuery 数据分析 | 🌐 |
+| 160 | [[#clickhouse\|clickhouse]] | ClickHouse Cloud 数据库连接 | 🌐 |
+| 161 | [[#clickhouse-best-practices\|clickhouse-best-practices]] | ClickHouse 最佳实践（28条规则） | 🌐 |
+| 162 | [[#cloud-sql-mysql\|cloud-sql-mysql]] | Cloud SQL for MySQL 集成 | 🌐 |
+| 163 | [[#cloud-sql-postgresql\|cloud-sql-postgresql]] | Cloud SQL for PostgreSQL 集成 | 🌐 |
+| 164 | [[#cloud-sql-sqlserver\|cloud-sql-sqlserver]] | Cloud SQL for SQL Server 集成 | 🌐 |
+| 165 | [[#cockroachdb\|cockroachdb]] | CockroachDB 分布式数据库 | 🌐 |
+| 166 | [[#convex\|convex]] | Convex 实时后端平台 | 🌐 |
+| 167 | [[#databases-on-aws\|databases-on-aws]] | AWS 数据库专家指导 | 🌐 |
+| 168 | [[#databricks\|databricks]] | Databricks 数据智能平台 | 🌐 |
+| 169 | [[#datahub-skills\|datahub-skills]] | DataHub 数据目录开发工具包 | 🌐 |
+| 170 | [[#dataproc\|dataproc]] | Dataproc 集群与作业管理 | 🌐 |
+| 171 | [[#dataverse\|dataverse]] | Microsoft Dataverse 技能包 | 🌐 |
+| 172 | [[#duckdb-skills\|duckdb-skills]] | DuckDB 数据分析技能包 | 🌐 |
+| 173 | [[#firebase\|firebase]] | Google Firebase 全栈集成 | ✅ |
+| 174 | [[#firestore-native\|firestore-native]] | Firestore 原生集成 | 🌐 |
+| 175 | [[#knowledge-catalog\|knowledge-catalog]] | Google Cloud 知识目录 | 🌐 |
+| 176 | [[#looker\|looker]] | Looker 数据分析平台 | 🌐 |
+| 177 | [[#mongodb\|mongodb]] | MongoDB 数据库集成 | 🌐 |
+| 178 | [[#neon\|neon]] | Neon Serverless PostgreSQL | 🌐 |
+| 179 | [[#oracledb\|oracledb]] | Oracle 数据库集成 | 🌐 |
+| 180 | [[#pinecone\|pinecone]] | Pinecone 向量数据库 | 🌐 |
+| 181 | [[#planetscale\|planetscale]] | PlanetScale MySQL 平台 | 🌐 |
+| 182 | [[#qdrant-skills\|qdrant-skills]] | Qdrant 向量搜索引擎技能包 | 🌐 |
+| 183 | [[#redis-development\|redis-development]] | Redis 开发最佳实践 | 🌐 |
+| 184 | [[#sap-hana-cli\|sap-hana-cli]] | SAP HANA CLI 工具包（150+ 工具） | 🌐 |
+| 185 | [[#spanner\|spanner]] | Cloud Spanner 集成 | 🌐 |
+| 186 | [[#supabase\|supabase]] | Supabase 开源 BaaS 平台 | 🌐 |
+| 187 | [[#vsql-extension-builder\|vsql-extension-builder]] | VillageSQL MySQL 扩展构建器 | 🌐 |
+| 188 | [[#zilliz\|zilliz]] | Zilliz Cloud 向量数据库管理 | 🌐 |
+
+### 📊 监控运维（17个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 189 | [[#amplitude\|amplitude]] | Amplitude 产品分析平台 | 🌐 |
+| 190 | [[#dash0\|dash0]] | Dash0 OpenTelemetry 可观测性 | 🌐 |
+| 191 | [[#datadog\|datadog]] | Datadog 监控平台集成 | 🌐 |
+| 192 | [[#fullstory\|fullstory]] | Fullstory 行为分析与会话回放 | 🌐 |
+| 193 | [[#grafana-assistant\|grafana-assistant]] | Grafana Assistant 应用与 CLI | 🌐 |
+| 194 | [[#grafana-cloud-mcp\|grafana-cloud-mcp]] | Grafana Cloud MCP（托管版，无需本地安装） | 🌐 |
+| 195 | [[#grafana-mcp\|grafana-mcp]] | Grafana MCP 集成 | 🌐 |
+| 196 | [[#honeycomb\|honeycomb]] | Honeycomb 可观测性平台 | 🌐 |
+| 197 | [[#langfuse\|langfuse]] | Langfuse 开源 LLM 工程平台 | 🌐 |
+| 198 | [[#langfuse-observability\|langfuse-observability]] | Langfuse × Claude Code 可观测性 | 🌐 |
+| 199 | [[#logfire\|logfire]] | Logfire Python 可观测性 | 🌐 |
+| 200 | [[#logrocket\|logrocket]] | LogRocket 会话回放与分析 | 🌐 |
+| 201 | [[#pagerduty\|pagerduty]] | PagerDuty 事故风险评分 | 🌐 |
+| 202 | [[#posthog\|posthog]] | PostHog 产品分析平台 | 🌐 |
+| 203 | [[#rootly\|rootly]] | Rootly 事故管理全生命周期 | 🌐 |
+| 204 | [[#sentry\|sentry]] | Sentry 错误监控集成 | 🌐 |
+| 205 | [[#sentry-cli\|sentry-cli]] | Sentry CLI 命令行工具 | 🌐 |
+
+### 🔒 安全合规（13个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 206 | [[#42crunch-api-security-testing\|42crunch-api-security-testing]] | 42Crunch API 安全自动化测试 | 🌐 |
+| 207 | [[#auth0\|auth0]] | Auth0 企业身份认证 | 🌐 |
+| 208 | [[#crowdstrike-falcon-foundry\|crowdstrike-falcon-foundry]] | CrowdStrike Falcon Foundry 安全开发 | 🌐 |
+| 209 | [[#duende-skills\|duende-skills]] | Duende IdentityServer 安全开发 | 🌐 |
+| 210 | [[#jfrog\|jfrog]] | JFrog DevOps 安全平台 | 🌐 |
+| 211 | [[#security-guidance\|security-guidance]] | 代码安全审计与实时指导 | 🏢 |
+| 212 | [[#semgrep\|semgrep]] | Semgrep 实时代码安全扫描 | 🌐 |
+| 213 | [[#sonarqube\|sonarqube]] | SonarQube 代码质量与安全门禁 | 🌐 |
+| 214 | [[#sonatype-guide\|sonatype-guide]] | Sonatype 供应链安全指南 | 🌐 |
+| 215 | [[#vanta\|vanta]] | Vanta 安全合规平台 | 🌐 |
+| 216 | [[#vanta-mcp-plugin\|vanta-mcp-plugin]] | Vanta 安全合规 MCP | 🌐 |
+| 217 | [[#workos\|workos]] | WorkOS 企业身份集成 | 🌐 |
+| 218 | [[#zscaler\|zscaler]] | Zscaler 云安全平台管理 | 🌐 |
+
+### 🚀 部署服务（8个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 219 | [[#azure\|azure]] | Azure 云服务专家 | 🌐 |
+| 220 | [[#cloudflare\|cloudflare]] | Cloudflare 开发者平台 | 🌐 |
+| 221 | [[#deploy-on-aws\|deploy-on-aws]] | AWS 应用部署 | 🌐 |
+| 222 | [[#hostinger\|hostinger]] | Hostinger 网站与 VPS 管理 | 🌐 |
+| 223 | [[#railway\|railway]] | Railway 部署平台 | 🌐 |
+| 224 | [[#render\|render]] | Render 部署平台 | 🌐 |
+| 225 | [[#valtown\|valtown]] | Val Town 构建与部署 | 🌐 |
+| 226 | [[#vercel\|vercel]] | Vercel 部署平台集成 | 🌐 |
+
+### 🎨 设计创意（6个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 227 | [[#adobe-for-creativity\|adobe-for-creativity]] | Adobe 创意工具套件 | 🌐 |
+| 228 | [[#canva\|canva]] | Canva 设计平台集成 | 🌐 |
+| 229 | [[#figma\|figma]] | Figma 设计平台集成 | 🌐 |
+| 230 | [[#hyperframes\|hyperframes]] | HyperFrames by HeyGen 视频生成 | 🌐 |
+| 231 | [[#miro\|miro]] | Miro 在线白板协作 | 🌐 |
+| 232 | [[#runway-api\|runway-api]] | Runway 视频生成 API | 🌐 |
+
+### 📖 学习教学（3个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 233 | [[#explanatory-output-style\|explanatory-output-style]] | 解释性输出风格 | 🏢 |
+| 234 | [[#learn-with-coursera\|learn-with-coursera]] | Coursera 个性化学习 | 🌐 |
+| 235 | [[#learning-output-style\|learning-output-style]] | 交互式学习模式 | 🏢 |
+
+### 📍 位置服务（2个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 236 | [[#amazon-location-service\|amazon-location-service]] | Amazon Location Service 地图服务 | 🌐 |
+| 237 | [[#mapbox\|mapbox]] | Mapbox 地图与位置服务 | 🌐 |
+
+### 🤖 自动化（1个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 238 | [[#zyte-web-data\|zyte-web-data]] | Zyte Web 数据采集 | 🌐 |
+
+### 📐 数学（1个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 239 | [[#math-olympiad\|math-olympiad]] | 数学竞赛求解器（对抗验证） | 🏢 |
+
+### 🔄 迁移（1个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 240 | [[#aws-transform\|aws-transform]] | AWS 代码迁移与现代化转换 | 🌐 |
+
+### 🧪 测试（1个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 241 | [[#playwright\|playwright]] | Playwright 自动化测试集成 | ✅ |
+
+### 📦 未分类（14个）
+
+| # | 插件 | 中文名称 | |
+|---|------|----------|---|
+| 242 | [[#ai-plugins\|ai-plugins]] | Endor Labs 软件供应链安全 | 🌐 |
+| 243 | [[#aikido\|aikido]] | Aikido 安全扫描（SAST + 密钥 + IaC） | 🌐 |
+| 244 | [[#atlan\|atlan]] | Atlan 数据目录平台 | 🌐 |
+| 245 | [[#brightdata-plugin\|brightdata-plugin]] | Bright Data 网页数据采集平台 | 🌐 |
+| 246 | [[#build-with-wordpress\|build-with-wordpress]] | WordPress 建站与开发 | 🌐 |
+| 247 | [[#cloudinary\|cloudinary]] | Cloudinary 媒体资产管理 | 🌐 |
+| 248 | [[#data-engineering\|data-engineering]] | 数据工程通用插件 | 🌐 |
+| 249 | [[#fastly-agent-toolkit\|fastly-agent-toolkit]] | Fastly 边缘计算工具包 | 🌐 |
+| 250 | [[#fiftyone\|fiftyone]] | FiftyOne 计算机视觉数据平台 | 🌐 |
+| 251 | [[#nightvision\|nightvision]] | NightVision DAST 动态安全测试 | 🌐 |
+| 252 | [[#nimble\|nimble]] | Nimble Web 数据工具包 | 🌐 |
+| 253 | [[#postiz\|postiz]] | Postiz 社交媒体自动化 | 🌐 |
+| 254 | [[#prisma\|prisma]] | Prisma ORM 数据库管理 | 🌐 |
+| 255 | [[#remember\|remember]] | Remember 持续记忆 | 🌐 |
+
+> 共 **255** 个插件 | 更新：2026-07-07
+
+## 概述
+
+| 类型 | 数量 | 说明 |
+|------|------|------|
+| 🏢 官方内部插件 | 36 | Anthropic 自研维护，位于 `plugins/` 目录 |
+| ✅ 官方收录第三方 | 15 | 经 Anthropic 审核认证，位于 `external_plugins/` 目录 |
+| 🌐 第三方社区插件 | 204 | 社区/企业发布，通过 Git 仓库远程分发 |
+
+## 通用安装与基础操作
+
+```bash
+# 更新官方插件市场
+/plugin marketplace update claude-plugins-official
+
+# 浏览全部可用插件
+/plugin browse claude-plugins-official
+
+# 安装指定插件
+/plugin install <插件名称>@claude-plugins-official
+
+# 查看已安装 / 禁用 / 启用 / 卸载
+/plugin list
+/plugin disable <插件名称>
+/plugin enable <插件名称>
+/plugin uninstall <插件名称>
+```
+
+---
+
+## 分类概览
+
+| 分类              | 中文名称  | 数量  |
+| --------------- | ----- | --- |
+| `development`   | 开发工具  | 109 |
+| `productivity`  | 效率协作  | 45  |
+| `database`      | 数据库   | 34  |
+| `monitoring`    | 监控运维  | 17  |
+| `uncategorized` | 未分类   | 14  |
+| `security`      | 安全合规  | 13  |
+| `deployment`    | 部署服务  | 8   |
+| `design`        | 设计创意  | 6   |
+| `learning`      | 学习教学  | 3   |
+| `location`      | 位置服务  | 2   |
+| `migration`     | 迁移工具  | 1   |
+| `math`          | 数学竞赛  | 1   |
+| `testing`       | 测试工具  | 1   |
+| `automation`    | 自动化采集 | 1   |
+
+---
+
+# 第一部分：Anthropic 官方内部插件（36个）
+
+> Anthropic 自研维护的核心插件，位于 `claude-plugins-official` 仓库 `plugins/` 目录。
+
+## 一、开发工作流类
+
+##### agent-sdk-dev
+**Agent SDK 开发工具包**
+
+一站式 Claude Agent SDK 应用开发插件，提供 Python/TypeScript 项目脚手架、语法验证和版本兼容性检测，帮助开发者快速创建和部署自定义 AI Agent 应用。
+
+- **作者**：Anthropic
+- **前置要求**：Python 3.8+ / Node.js 18+，需配置 Claude API Key
+- **使用方法**：/new-sdk-app — 交互式创建新 Agent SDK 项目，自动生成项目结构、配置文件、示例代码和依赖清单。内置 agent-sdk-verifier-py 和 agent-sdk-verifier-ts 两个验证器。
+- **适用场景**：开发基于 Claude Agent SDK 的自定义智能体、自动化工具、API 集成服务。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/agent-sdk-dev](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/agent-sdk-dev)
+
+##### feature-dev
+**功能开发全流程（7阶段）**
+
+标准化 7 阶段功能开发工作流插件，从需求分析到上线交付全流程覆盖，内置 code-explorer（代码库分析）、code-architect（架构设计）、code-reviewer（质量审查）三个专业智能体。
+
+- **作者**：Anthropic
+- **前置要求**：无特殊前置要求
+- **使用方法**：/feature-dev — 启动引导式开发流程：①需求发现→②代码库探索→③歧义澄清→④架构设计→⑤功能实现→⑥质量审查→⑦交付总结。智能体可单独调用。
+- **适用场景**：新功能开发、模块重构、复杂需求的标准化落地。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/feature-dev](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/feature-dev)
+
+##### frontend-design
+**前端 UI 设计与实现**
+
+生成独特的生产级前端界面，避免通用 AI 美学风格，提供高质感、可直接上线的前端代码，支持 React/Vue/HTML+CSS+JS 原生实现，自动适配主流浏览器和 W3C 规范。
+
+- **作者**：Anthropic
+- **前置要求**：无特殊前置要求
+- **使用方法**：通过自然语言触发：'用 frontend-design 实现一个企业官网首页，现代极简风格，响应式布局'。自动生成独特的排版与配色方案、交互动画、响应式布局和无障碍适配。
+- **适用场景**：前端页面开发、UI 组件库搭建、营销页/官网开发、产品原型落地。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/frontend-design](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/frontend-design)
+
+## 二、语言服务 LSP 类（12个）
+
+> 打开对应文件类型时自动启动，提供实时语法错误诊断、代码补全和格式化。
+
+##### clangd-lsp
+**C/C++ 语言服务器 (clangd)**
+
+基于 clangd 的 C/C++ 语言服务器，提供代码智能补全、语法诊断、格式化、定义跳转、引用查找、跨文件引用分析和宏展开预览，支持内存泄漏风险提示和 C++ 标准合规性检查。
+
+- **作者**：Anthropic
+- **前置要求**：macOS: brew install llvm / Linux: sudo apt install clangd / Windows: winget install LLVM.LLVM
+- **使用方法**：打开 .c/.h/.cpp/.cc/.cxx/.hpp/.hxx 文件时自动启动，提供实时语法错误诊断、类型提示和代码补全。
+- **适用场景**：C/C++ 系统开发、嵌入式开发、高性能计算项目。
+
+##### csharp-lsp
+**C# 语言服务器**
+
+C# 语言服务器，提供智能补全、语法诊断、重构、格式化、NuGet 包依赖分析和 ASP.NET Core 框架智能提示，支持接口实现自动生成。
+
+- **作者**：Anthropic
+- **前置要求**：.NET SDK 6.0+，安装：dotnet tool install --global csharp-ls
+- **使用方法**：打开 .cs 文件自动启动，提供实时编译错误诊断、LINQ 语法优化、接口实现自动生成。
+- **适用场景**：.NET/.NET Core 项目开发、Unity 游戏开发、C# 桌面应用开发。
+
+##### gopls-lsp
+**Go 语言服务器 (gopls)**
+
+Go 官方语言服务器，提供智能补全、静态分析、重构、格式化、go.mod 依赖管理、goroutine 泄漏风险提示和接口实现检查。
+
+- **作者**：Anthropic
+- **前置要求**：Go 1.18+，安装：go install golang.org/x/tools/gopls@latest（确保 $GOPATH/bin 在 PATH 中）
+- **使用方法**：打开 .go 文件自动启动，提供实时语法错误诊断、未使用变量/包检测、自动 go fmt 格式化、测试用例自动生成。
+- **适用场景**：Go 后端开发、云原生项目、微服务架构、CLI 工具开发。
+
+##### jdtls-lsp
+**Java 语言服务器 (Eclipse JDT.LS)**
+
+基于 Eclipse JDT.LS 的 Java 语言服务器，提供智能补全、诊断、重构、格式化、Maven/Gradle 依赖管理和 Spring Boot 框架智能提示。
+
+- **作者**：Anthropic
+- **前置要求**：JDK 17+，安装：brew install jdtls (macOS)，Linux/Windows 需手动配置环境变量
+- **使用方法**：打开 .java 文件自动启动，提供实时编译错误诊断、Spring Boot 智能提示、自动 import、getter/setter 生成。
+- **适用场景**：Java 后端开发、Spring 生态项目、Android Java 层开发。
+
+##### kotlin-lsp
+**Kotlin 语言服务器**
+
+Kotlin 语言服务器，提供智能补全、语法诊断、格式化、Jetpack Compose 智能提示、空安全检查、协程代码优化和 Java-Kotlin 互操作诊断。
+
+- **作者**：Anthropic
+- **前置要求**：brew install JetBrains/utils/kotlin-lsp (macOS)，Windows/Linux 通过 Kotlin CLI 安装
+- **使用方法**：打开 .kt/.kts 文件自动启动，提供空安全检查、协程优化、Android 开发智能提示。
+- **适用场景**：Android 开发、Kotlin 后端开发、Kotlin Multiplatform 跨平台项目。
+
+##### lua-lsp
+**Lua 语言服务器**
+
+Lua 语言服务器，提供智能补全、语法诊断、格式化、版本兼容性检查，覆盖 Neovim/Redis/OpenResty 等 Lua 生态的专属智能提示。
+
+- **作者**：Anthropic
+- **前置要求**：brew install lua-language-server (macOS) / sudo pacman -S lua-language-server (Arch)
+- **使用方法**：打开 .lua 文件自动启动，提供实时语法错误和未定义变量诊断。
+- **适用场景**：Neovim 插件开发、游戏 Lua 脚本、OpenResty 后端开发、Redis 脚本编写。
+
+##### php-lsp
+**PHP 语言服务器 (Intelephense)**
+
+基于 Intelephense 的 PHP 语言服务器，提供智能补全、语法诊断、格式化、Laravel/ThinkPHP 框架智能提示和 SQL 注入风险提示。
+
+- **作者**：Anthropic
+- **前置要求**：Node.js 16+，安装：npm install -g intelephense
+- **使用方法**：打开 .php 文件自动启动，提供实时语法错误诊断、未定义变量/方法检测、自动补全命名空间。
+- **适用场景**：PHP 后端开发、WordPress 二次开发、Laravel/ThinkPHP 框架项目。
+
+##### pyright-lsp
+**Python 语言服务器 (Pyright)**
+
+微软官方 Pyright 静态类型检查语言服务器，提供类型检查、智能补全、语法诊断、虚拟环境自动识别和 Pandas/NumPy 等数据科学库专属智能提示。
+
+- **作者**：Anthropic
+- **前置要求**：推荐 pipx install pyright，备选 pip install pyright 或 npm install -g pyright
+- **使用方法**：打开 .py/.pyi 文件自动启动，提供实时类型错误诊断、未使用变量/导入提示、Python 版本兼容性检查。
+- **适用场景**：Python 全场景开发，大型项目类型安全管控、数据分析、AI 模型开发。
+
+##### ruby-lsp
+**Ruby 语言服务器**
+
+Ruby 语言服务器，提供代码智能补全、语法诊断、重构、格式化和 Rails 项目专属分析能力。
+
+- **作者**：Anthropic
+- **前置要求**：Ruby 3.0+，安装：gem install ruby-lsp
+- **使用方法**：打开 .rb 文件自动启动，提供实时语法检查和智能补全。
+- **适用场景**：Ruby on Rails 项目开发、Ruby 脚本编写。
+
+##### rust-analyzer-lsp
+**Rust 语言服务器 (rust-analyzer)**
+
+Rust 官方语言服务器，提供所有权/生命周期分析、宏展开、借用检查、Cargo 集成、unsafe 代码风险提示和 Trait 实现自动生成。
+
+- **作者**：Anthropic
+- **前置要求**：Rust 工具链，安装：rustup component add rust-analyzer
+- **使用方法**：打开 .rs 文件自动启动，提供实时借用检查、所有权错误诊断、Cargo.toml 依赖分析。
+- **适用场景**：Rust 系统开发、WebAssembly、后端服务、嵌入式开发。
+
+##### swift-lsp
+**Swift 语言服务器 (SourceKit-LSP)**
+
+基于 SourceKit-LSP 的 Swift 语言服务器，提供智能补全、语法诊断、SwiftUI/AppKit 智能提示、可选值安全检查和 Swift Package Manager 集成。
+
+- **作者**：Anthropic
+- **前置要求**：Xcode 14+ (macOS)，Linux 需安装 Swift 工具链
+- **使用方法**：打开 .swift 文件自动启动，提供实时语法错误诊断、iOS/macOS API 提示、协议实现自动补全。
+- **适用场景**：iOS/macOS 应用开发、Swift 服务端开发。
+
+##### typescript-lsp
+**TypeScript/JavaScript 语言服务器**
+
+TypeScript/JavaScript 语言服务器，提供严格类型检查、智能补全、React/Vue 框架提示、JSX/TSX 组件补全、ESModule/CommonJS 双模式支持和 React Hooks 专属优化。
+
+- **作者**：Anthropic
+- **前置要求**：Node.js 16+，安装：npm install -g typescript-language-server typescript
+- **使用方法**：打开 .ts/.tsx/.js/.jsx/.cjs/.mjs 文件自动启动，提供实时类型错误诊断和智能提示。
+- **适用场景**：前端开发、Node.js 后端、全栈 TypeScript 项目。
+
+## 三、效率与扩展工具类（21个）
+
+##### claude-code-setup
+**Claude Code 环境自动化配置**
+
+智能分析当前项目技术栈（React/Vue/Go/Python 等），推荐并配置对应的 MCP 服务器、技能、钩子和插件，一键完成项目级环境初始化。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：/claude-code-setup:init — 扫描项目特征，自动生成环境配置方案，推荐适配的插件、MCP 服务器和代码规范，支持一键安装和配置。
+- **适用场景**：新项目初始化、团队项目统一环境配置、老项目 Claude Code 适配优化。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-code-setup)
+
+##### claude-md-management
+**CLAUDE.md 项目文档管理**
+
+自动维护项目 CLAUDE.md 文件，确保文档与代码同步，提供文档质量评分和更新建议，捕获开发过程中的经验教训并沉淀为团队知识库。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：/claude-md:improve — 扫描所有 CLAUDE.md 文件按官方质量标准评分并自动补全；/claude-md:revise — 捕获开发经验并更新到 CLAUDE.md 中。
+- **适用场景**：项目上下文管理、团队协作规范统一、项目交接文档沉淀。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/claude-md-management)
+
+##### code-modernization
+**代码现代化改造（8阶段工作流）**
+
+将遗留代码库（COBOL、旧版 Java/C++、单体 Web 应用）现代化迁移的结构化工具包，提供评估→映射→提取规则→简要→重构→转换→加固的完整工作流。内置 5 个专业智能体。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：/modernize-assess 评估难度和风险；/modernize-map 生成代码拓扑地图；/modernize-extract-rules 提取业务规则；/modernize-transform 执行转换。
+- **适用场景**：COBOL 迁移、遗留系统现代化、单体应用拆分、技术栈升级。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-modernization)
+
+##### code-review
+**多智能体自动化代码审查**
+
+多智能体并行代码审查插件，基于 80 分置信度阈值过滤误报，覆盖正确性、性能、安全性、可维护性和规范符合性，支持 PR 全量审查和单文件增量审查。通过 git blame 获取历史上下文精准定位问题。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：/code-review — 对当前分支 PR 或指定文件执行自动化审查，并行启动多个专业智能体，输出可直接落地的修改建议。
+- **适用场景**：PR 提交前自检、团队代码评审前置筛查、历史代码质量复盘。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/code-review](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/code-review)
+
+##### code-simplifier
+**代码简化与重构**
+
+在不改变业务功能的前提下，消除冗余逻辑、简化嵌套、优化循环与条件判断、统一编码风格，输出重构前后对比说明，确保功能 100% 兼容。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：可单独调用或集成在 code-review/feature-dev 流程中，对指定文件/代码片段执行简化操作。
+- **适用场景**：历史代码重构、技术债务清理、代码可读性优化、新人接手项目梳理。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/code-simplifier)
+
+##### commit-commands
+**Git 工作流自动化**
+
+自动化 Git 提交流程，自动生成符合 Conventional Commits 规范的提交信息，支持一键完成提交→推送→创建 PR 全流程，自动清理本地无效分支。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：/commit 自动检测变更并生成规范提交信息；/commit-push-pr 一站式提交→推送→创建PR；/clean_gone 清理本地已被远程删除的无效分支。
+- **适用场景**：日常 Git 版本控制、团队提交规范统一。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/commit-commands](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/commit-commands)
+
+##### cwc-makers
+**Code-with-Claude Makers 硬件集成**
+
+一键配置 M5 Cardputer 开发板环境，克隆 build-with-claude 仓库、烧录 UIFlow 固件、安装 Claude Buddy 应用包。
+
+- **作者**：Anthropic
+- **前置要求**：M5 Cardputer 开发板
+- **使用方法**：/maker-setup — 自动完成开发板环境初始化全流程。
+- **适用场景**：硬件开发爱好者、IoT 项目快速原型。
+- **项目主页**：[https://claude.com/cwc-makers](https://claude.com/cwc-makers)
+
+##### explanatory-output-style
+**解释性输出风格**
+
+通过 SessionStart 钩子在 Claude 输出中自动加入教育性见解，解释架构决策、设计模式、技术选型权衡，在代码生成中自动输出实现选择原因、替代方案对比和潜在风险。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：安装即自动生效，在代码生成、架构设计等场景自动加入教育性见解和知识讲解。
+- **适用场景**：编程学习、新人带教、技术方案讲解。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/explanatory-output-style](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/explanatory-output-style)
+
+##### hookify
+**零代码钩子创建器**
+
+通过自然语言创建自定义钩子规则，监控 Claude Code 关键工作流节点（Bash 命令执行、文件编辑、会话停止、用户提示提交），拦截不符合规则的行为。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：/hookify 交互式创建自定义规则；/hookify:list 列出所有规则；/hookify:configure 修改/启用/禁用规则。例如：'禁止执行删除根目录的 bash 命令'。
+- **适用场景**：团队规范管控、生产环境操作安全、高危操作审计。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/hookify](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/hookify)
+
+##### learning-output-style
+**交互式学习模式**
+
+在关键决策点暂停并要求用户完成 5-10 行核心代码编写，实现'边做边学'的主动式学习，同时提供设计决策的权衡解释和代码反馈。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：安装即自动生效，在功能开发过程中关键决策点暂停，引导用户理解核心逻辑而非直接生成完整代码。
+- **适用场景**：编程学习、技术栈转型、新人上手、代码能力提升。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/learning-output-style](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/learning-output-style)
+
+##### math-olympiad
+**数学竞赛求解器（对抗验证）**
+
+求解 IMO、Putnam、USAMO 等竞赛数学题，采用对抗验证机制——用独立上下文的验证器攻击证明，捕捉自我验证遗漏的错误。校准后比单一验证器减少 45% 的错误率。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：通过 math-olympiad 技能触发，输入竞赛题目即可获得经过多重对抗验证的解答。
+- **适用场景**：数学竞赛训练、高等数学问题求解。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-olympiad](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/math-olympiad)
+
+##### mcp-server-dev
+**MCP 服务器开发工具包**
+
+一站式 MCP 服务器设计与开发技能包，覆盖远程 HTTP、MCPB、本地三种部署模式，指导工具设计模式、认证方案和交互式 MCP 应用开发。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：通过内置技能触发：build-mcp-server（构建 MCP 服务器）、build-mcp-app（构建 MCP 应用）、build-mcpb（MCPB 部署）。
+- **适用场景**：自定义 MCP 服务器开发、工具集成、API 暴露为 MCP 工具。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-server-dev)
+
+##### mcp-tunnels
+**MCP 隧道（内网穿透连接）**
+
+通过 Anthropic MCP 隧道将 Claude 连接到私有网络中的 MCP 服务器，解决内网服务无法被 Claude 访问的问题，支持证书生成、代理配置和端到端连接验证。
+
+- **作者**：Anthropic
+- **前置要求**：Docker、Docker Compose
+- **使用方法**：/create-docker-mcp-tunnel — 驱动 Docker Compose 快速启动：证书生成→代理配置→cloudflared→连接验证。
+- **适用场景**：连接内网 MCP 服务器、企业内部服务暴露。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-tunnels](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/mcp-tunnels)
+
+##### playground
+**交互式可视化调试器**
+
+生成可在浏览器中操作的 HTML 交互页面，实现'可视化调整→自动生成指令→Claude 修改代码'闭环。内置设计面板、数据探索、文档评审、Diff 审查、代码地图、概念地图六种模板。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：自然语言触发，支持架构图可视化、UI 布局拖拽调整（间距/配色/字体）、代码 Diff 审查、数据探索分析等多种场景。
+- **适用场景**：架构可视化、UI 布局调整、代码 Diff 审查、数据分析探索。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/playground](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/playground)
+
+##### plugin-dev
+**插件开发全流程工具包（7个专项技能）**
+
+端到端的 Claude Code 插件创建向导，内置 7 个专项开发技能（Hook/MCP/Command/Agent/Skill 开发、Plugin 结构设计和配置），自动生成符合官方规范的插件结构。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：/plugin-dev:create-plugin — 启动交互式创建向导，引导完成结构设计→功能开发→配置编写→测试验证→兼容性检查→安全验证。
+- **适用场景**：自定义插件开发、团队内部插件封装、插件市场发布。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/plugin-dev](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/plugin-dev)
+
+##### pr-review-toolkit
+**PR 审查专业工具包（6大智能体）**
+
+内置 6 个垂直领域专家智能体的深度 PR 审查工具：comment-analyzer（注释准确性）、pr-test-analyzer（测试覆盖）、silent-failure-hunter（静默失败排查）、type-design-analyzer（类型安全）、code-reviewer（代码质量）、code-simplifier（代码简化）。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：/pr-review-toolkit:review-pr [PR编号] — 针对指定 PR 执行全维度审查；也可通过自然语言触发各智能体单独审查。
+- **适用场景**：生产环境 PR 正式评审、核心模块变更深度把关。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/pr-review-toolkit](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/pr-review-toolkit)
+
+##### project-artifact
+**项目状态页生成器**
+
+生成并发布一个可分享的 claude.ai artifact 项目状态页，包含概述与成功标准、工作流序列和下一步计划，支持刷新更新。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：通过 project-artifact 技能触发，自动生成项目状态页。
+- **适用场景**：项目进度展示、团队同步、stakeholder 汇报。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/project-artifact](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/project-artifact)
+
+##### ralph-loop
+**迭代式自引用 AI 循环（Ralph Wiggum 技术）**
+
+让 Claude 持续迭代优化同一任务直到满足成功标准。每轮基于上一轮结果改进，自动验证是否满足标准，无需人工干预。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：/ralph-loop 任务/成功标准/最大迭代次数 — 启动迭代循环；/cancel-ralph — 终止运行。例如：'任务：优化 Python 函数性能；成功标准：耗时降低 50%；最大迭代次数：10'。
+- **适用场景**：代码性能优化、文本润色、Bug 自动修复、有明确验收标准的自动化任务。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/plugins/ralph-loop](https://github.com/anthropics/claude-plugins-public/tree/main/plugins/ralph-loop)
+
+##### security-guidance
+**代码安全审计与实时指导**
+
+实时监控代码编辑和命令执行，自动检测 XSS、SQL 注入、命令注入、SSRF、硬编码密钥等 25+ 类高危安全模式。不仅告警还提供可直接落地的修复代码。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：安装自动生效。通过 PreToolUse 钩子监控代码编辑（9 类高危模式）和 Bash 命令（拦截删除/权限修改等）。支持 OWASP Top 10 合规性检查。
+- **适用场景**：代码安全审计、高危操作防护、安全左移、团队安全编码规范。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/security-guidance)
+
+##### session-report
+**会话使用报告（HTML 可视化）**
+
+从本地 ~/.claude/projects 转录文件中生成可探索的 HTML 报告，可视化展示 Token 消耗、缓存效率、子代理调用、技能使用和最耗时的提示。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：通过 session-report 技能触发，自动扫描本地会话历史并生成交互式 HTML 报告。
+- **适用场景**：Token 用量分析、开发效率评估、团队成本管控。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/session-report](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/session-report)
+
+##### skill-creator
+**Skill 可视化创建器**
+
+通过自然语言创建标准化 Claude 技能，无需手动编写规范文件，自动生成符合官方规范的技能目录结构（SKILL.md + scripts/ + references/ + assets/ + templates/），支持版本管理和分享。
+
+- **作者**：Anthropic
+- **前置要求**：无
+- **使用方法**：/skill-creator:new — 交互式创建技能，描述用途、输入、触发条件和执行逻辑，自动生成标准化结构并检查兼容性。
+- **适用场景**：自定义工作流封装、团队常用操作标准化、重复任务自动化。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/skill-creator)
+
+
+---
+
+# 第二部分：官方收录第三方认证插件（15个）
+
+> 经 Anthropic 官方审核认证，收录在 `external_plugins/` 目录。
+
+##### asana
+**Asana 项目管理集成**
+
+在 Claude Code 中直接查询、创建、更新 Asana 任务和项目，同步开发进度与项目计划。支持筛选截止日期、指派负责人、更新状态等操作。
+
+- **前置要求**：需完成 Asana OAuth 授权
+- **使用方法**：自然语言操作：'查询我负责的 Asana 任务，筛选截止日期在 7 天内的'、'创建 Asana 任务：修复登录页 Bug，截止日期 3 天后'。
+- **适用场景**：开发任务与项目管理同步、需求与开发联动。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/asana](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/asana)
+
+##### context7
+**开发文档实时查询 (Upstash Context7)**
+
+自动识别项目中使用的框架和库（React/Vue/Next.js/Express/FastAPI 等），实时拉取版本特定的最新官方文档、API 说明和代码示例，无需离开开发环境查文档。
+
+- **前置要求**：安装后自动生效
+- **使用方法**：打开代码文件时自动识别引入的依赖库，提供对应文档查询。支持 Stripe/OpenAI/AWS SDK 等第三方 API 文档的实时查询。
+- **适用场景**：新技术栈开发、不熟悉的库/API 使用、团队文档统一管理。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/context7](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/context7)
+
+##### discord
+**Discord 消息桥接**
+
+将 Claude Code 连接到 Discord，支持消息发送、频道管理和内置访问控制策略配置。
+
+- **前置要求**：需配置 Discord Bot Token
+- **使用方法**：/discord:access — 管理配对、白名单和访问策略。安装后可通过 Claude 向指定 Discord 频道发送消息和通知。
+- **适用场景**：团队开发动态通知、自动化消息推送。
+
+##### fakechat
+**本地测试聊天界面**
+
+本地 Web 聊天界面，用于测试频道通知流程，无需 Token、无需访问控制、不依赖第三方服务，开发调试用。
+
+- **前置要求**：无
+- **使用方法**：安装后自动在本地启动测试聊天界面，用于验证消息通知流程是否正常工作。
+- **适用场景**：插件开发测试、消息通知流程验证。
+
+##### firebase
+**Google Firebase 全栈集成**
+
+在 Claude Code 中管理 Firebase 项目、Firestore 数据库、Cloud Functions、Authentication 认证和 Hosting 部署，实现 Firebase 全流程开发与管理。
+
+- **前置要求**：需完成 Google 账号授权
+- **使用方法**：自然语言操作：查询/修改 Firestore 数据、编写/部署 Cloud Functions、管理 Authentication 用户、部署静态网站到 Firebase Hosting。
+- **适用场景**：Firebase 全栈项目、移动端后端、Serverless 开发。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/firebase](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/firebase)
+
+##### github
+**GitHub 深度集成**
+
+在 Claude Code 中管理 PR、Issue、代码仓库和 Action 流水线，无需离开开发环境即可完成 GitHub 全操作，支持 PR 审查、Issue 管理、仓库操作和 CI/CD 管理。
+
+- **前置要求**：需完成 GitHub OAuth 授权
+- **使用方法**：PR 管理：查询/审查/合并 PR、添加评论、指派审核人；Issue 管理：创建/编辑/关闭；仓库管理：克隆/创建/归档；Action 管理：查看/触发/重启流水线。
+- **适用场景**：GitHub 托管项目全流程开发、开源项目维护、团队协作。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/github](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/github)
+
+##### gitlab
+**GitLab DevOps 深度集成**
+
+支持 GitLab 仓库管理、MR 审查、Issue 跟踪和 CI/CD 流水线操作，适配自托管 GitLab 和 GitLab.com。
+
+- **前置要求**：需配置 GitLab 实例地址和 Access Token
+- **使用方法**：MR 管理：查询/审查/合并 MR、批准、添加评论；CI/CD：查看/触发/重启流水线、查看构建日志；Issue 管理：创建/编辑 Issue、管理里程碑。
+- **适用场景**：GitLab 托管项目开发、企业 DevOps 流程自动化。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/gitlab](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/gitlab)
+
+##### greptile
+**大规模代码库智能检索与理解**
+
+支持百万行级代码库的语义检索、架构分析和上下文理解。通过自然语言快速定位代码、理解业务逻辑和追踪调用链路。
+
+- **前置要求**：需配置 GitHub/GitLab 仓库地址和 API Key
+- **使用方法**：/greptile:search 语义搜索代码库；/greptile:explain 解释指定文件的业务逻辑和架构设计；/greptile:trace 追踪功能调用链路全流程。
+- **适用场景**：大型项目接手、遗留代码理解、跨模块问题排查、架构文档生成。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/greptile](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/greptile)
+
+##### imessage
+**iMessage 消息桥接（仅 macOS）**
+
+将 Claude Code 连接到 iMessage，直接读取 chat.db 数据库，通过 AppleScript 发送消息，支持内置访问控制策略。
+
+- **前置要求**：仅 macOS，需授予辅助功能权限
+- **使用方法**：/imessage:access — 管理配对、白名单和访问策略。安装后可收发 iMessage 消息。
+- **适用场景**：macOS 用户的团队消息通知、自动化消息发送。
+
+##### laravel-boost
+**Laravel 框架专属增强**
+
+Laravel 专属开发增强插件，提供 Artisan 命令集成、Eloquent 查询辅助、路由分析、数据迁移管理、安全审计（SQL 注入/XSS/CSRF 扫描）和 N+1 查询检测。
+
+- **前置要求**：需在 Laravel 项目目录中
+- **使用方法**：自然语言操作：执行 Artisan 命令、生成 Model/Controller/Migration、安全审计、性能优化（N+1 检测/慢查询分析）。
+- **适用场景**：Laravel 项目开发、PHP 后端、Laravel 项目维护优化。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/laravel-boost](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/laravel-boost)
+
+##### linear
+**Linear 项目管理集成**
+
+在 Claude Code 中管理 Linear Issue、创建任务、更新状态、查询迭代进度，无缝衔接开发流程与项目规划。
+
+- **前置要求**：需配置 Linear API Key
+- **使用方法**：自然语言操作：'创建 Linear Issue：用户列表接口性能优化，标签：性能优化，优先级：中'、'查询当前 Sprint 的所有 Issue 按状态分组统计'。
+- **适用场景**：敏捷开发管理、Issue 全生命周期管理、迭代进度跟踪。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/linear](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/linear)
+
+##### playwright
+**Playwright 自动化测试集成**
+
+微软官方 Playwright MCP 服务器，在 Claude Code 中编写、运行、调试 E2E 测试，自动生成测试用例、排查失败问题、优化 Flaky 测试稳定性。
+
+- **前置要求**：需在 Playwright 项目目录中
+- **使用方法**：根据页面需求自动生成 E2E 测试用例；直接在 Claude 中运行测试并查看报告/截图/录屏；针对失败用例自动分析原因并给出修复代码。
+- **适用场景**：前端 E2E 测试、Web 自动化测试、回归测试开发。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/playwright](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/playwright)
+
+##### serena
+**语义代码分析 (Serena)**
+
+基于语言服务器协议的语义代码分析 MCP 服务器，提供智能代码理解、重构建议和跨文件代码库导航。
+
+- **前置要求**：安装后自动激活
+- **使用方法**：自然语言查询代码库结构和关系，获取语义级别的重构建议和代码导航。
+- **适用场景**：大型代码库理解、代码重构决策、跨文件代码分析。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/serena](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/serena)
+
+##### telegram
+**Telegram 消息桥接**
+
+将 Claude Code 连接到 Telegram，支持消息收发和内置访问控制策略配置。
+
+- **前置要求**：需配置 Telegram Bot Token
+- **使用方法**：/telegram:access — 管理配对、白名单和访问策略。安装后可通过 Claude 向指定 Telegram 会话发送消息和通知。
+- **适用场景**：团队开发通知、自动化消息推送。
+
+##### terraform
+**Terraform IaC 集成 (HashiCorp 官方)**
+
+HashiCorp 官方 Terraform MCP 服务器，在 Claude Code 中编写、验证和管理 Terraform 基础设施即代码，支持 plan 输出分析和 state 文件管理。
+
+- **作者**：HashiCorp
+- **前置要求**：需安装 Terraform CLI
+- **使用方法**：自然语言生成 Terraform 配置、验证 plan 输出、管理 state 文件和模块引用。
+- **适用场景**：云基础设施管理、IaC 开发、多云部署编排。
+- **项目主页**：[https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/terraform](https://github.com/anthropics/claude-plugins-public/tree/main/external_plugins/terraform)
+
+
+---
+
+# 第三部分：第三方社区插件（204个）
+
+> 社区和企业发布，通过 Git 仓库远程分发。安装方式相同：`/plugin install <名称>@claude-plugins-official`。
+
+## 开发工具（development）- 81 个
+
+##### agentforce-adlc
+**Agentforce Agent 开发生命周期**
+
+Salesforce Agentforce Agent 开发全生命周期工具——编写、发现、脚手架、部署、测试和优化 .agent 文件。AI Agent 从零到生产的一站式工作流。
+
+- **项目主页**：[https://github.com/SalesforceAIResearch/agentforce-adlc](https://github.com/SalesforceAIResearch/agentforce-adlc)
+
+##### apollo-skills
+**Apollo GraphQL 开发技能包**
+
+Apollo GraphQL Agent 技能包——Apollo Client、Server、Federation、Connectors、Router、Rover CLI、iOS、Kotlin 和 Apollo MCP 服务器。覆盖 Schema 设计、查询优化和 GraphQL 全栈开发。
+
+- **作者**：Apollo GraphQL
+- **项目主页**：[https://www.apollographql.com](https://www.apollographql.com)
+
+##### appwrite
+**Appwrite 后端开发平台**
+
+Appwrite Claude Code 工具——SDK 技能、Appwrite MCP 服务器和部署命令。在 Claude 中管理 Auth/Database/Storage/Functions 等后端服务，快速构建全栈应用。
+
+- **作者**：Appwrite
+- **项目主页**：[https://appwrite.io](https://appwrite.io)
+
+##### astronomer-data-agents
+**Astronomer Apache Airflow 数据工程**
+
+面向 Apache Airflow 和 Astronomer 的数据工程插件——按最佳实践编写 DAG、调试 Pipeline 故障、追踪数据血缘、分析数据表、Airflow 2→3 迁移。管理本地和云端 Airflow 部署。
+
+- **项目主页**：[https://github.com/astronomer/agents](https://github.com/astronomer/agents)
+
+##### atomic-agents
+**Atomic Agents 框架开发**
+
+使用 Atomic Agents 框架构建 AI Agent 的全面开发工作流——包含 Schema 设计、架构规划、代码审查和工具开发专用 Agent。支持快速构建模块化 AI 应用。
+
+- **项目主页**：[https://github.com/BrainBlend-AI/atomic-agents](https://github.com/BrainBlend-AI/atomic-agents)
+
+##### aws-agents
+**AWS Agents 构建与部署**
+
+在 AWS 上构建、部署和运维 AI Agent——使用 Amazon Bedrock AgentCore 搭建 Agent、连接工具和记忆、配置安全策略、评估性能、调试和生产加固。
+
+- **作者**：Amazon Web Services
+- **项目主页**：[https://github.com/aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws)
+
+##### aws-agents-for-devsecops
+**AWS DevSecOps Agent**
+
+调查安全事件、审查代码并执行 UAT 发布就绪检查、扫描代码漏洞、运行渗透测试。集成 AWS DevOps Agent 和 AWS Security Agent，全流程 DevSecOps。
+
+- **作者**：Amazon Web Services
+- **项目主页**：[https://github.com/aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws)
+
+##### aws-amplify
+**AWS Amplify Gen 2 全栈开发**
+
+使用 AWS Amplify Gen 2 构建全栈应用——引导式工作流覆盖身份认证、数据模型、存储、GraphQL API 和 Lambda 函数。前后端一体化快速开发。
+
+- **项目主页**：[https://github.com/awslabs/agent-plugins](https://github.com/awslabs/agent-plugins)
+
+##### aws-core
+**AWS 核心服务开发**
+
+在 AWS 上构建、部署和运维应用——编写 Infrastructure-as-Code、使用核心服务（EC2/S3/Lambda/DynamoDB 等）、完成常见运维任务。AWS 日常开发的核心技能包。
+
+- **作者**：Amazon Web Services
+- **前置要求**：需配置 AWS Credentials
+- **使用方法**：自然语言创建和管理 AWS 资源、生成 CloudFormation/Terraform/CDK 模板、查询资源状态。
+- **适用场景**：AWS 云基础设施管理、应用部署、架构设计。
+- **项目主页**：[https://github.com/aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws)
+
+##### aws-data-analytics
+**AWS 数据分析（S3 Tables + Glue + Athena）**
+
+使用 S3 Tables、AWS Glue 和 Athena 构建数据湖、数据分析和 ETL 工作流。从数据摄入到分析查询的全流程管理。
+
+- **作者**：Amazon Web Services
+- **项目主页**：[https://github.com/aws/agent-toolkit-for-aws](https://github.com/aws/agent-toolkit-for-aws)
+
+##### aws-dev-toolkit
+**AWS 开发工具包（34 Skills + 11 Agents）**
+
+AWS 开发工具包——34 个 Skills、11 个 Agent 和 3 个 MCP 服务器，覆盖 AWS 上的构建、迁移和架构审查全场景。为创业公司打造的 AWS 一站式工具集。
+
+- **作者**：aws-samples
+- **项目主页**：[https://github.com/aws-samples/sample-claude-code-plugins-for-startups](https://github.com/aws-samples/sample-claude-code-plugins-for-startups)
+
+##### aws-serverless
+**AWS Serverless 开发**
+
+使用 AWS Serverless 服务设计、构建、部署、测试和调试无服务器应用。覆盖 Lambda/API Gateway/DynamoDB/Step Functions/EventBridge/SQS/SNS 等服务。
+
+- **项目主页**：[https://github.com/awslabs/agent-plugins](https://github.com/awslabs/agent-plugins)
+
+##### aws-startup-advisor
+**AWS 创业顾问**
+
+为创业公司提供个性化架构、成本、安全和迁移指导——从 Day-1 账号设置和安全基线到生产就绪基础设施、成本优化及后续扩展。覆盖创业全生命周期。
+
+- **作者**：Amazon Web Services
+- **项目主页**：[https://github.com/awslabs/startups](https://github.com/awslabs/startups)
+
+##### base44
+**Base44 全栈应用构建**
+
+构建和部署 Base44 全栈应用——提供 CLI 项目管理和 JavaScript/TypeScript SDK 开发技能。快速将想法转化为可运行的应用。
+
+- **项目主页**：[https://docs.base44.com](https://docs.base44.com)
+
+##### boltz
+**Boltz 分子结构预测**
+
+在 Claude Code 中使用 Boltz 预测蛋白质结构、筛选分子和设计结合物。AI 驱动的计算生物学和药物发现工具。
+
+- **作者**：Boltz
+- **项目主页**：[https://boltz.bio](https://boltz.bio)
+
+##### buildkite
+**Buildkite CI/CD 集成**
+
+Buildkite 官方技能包——Pipeline 管理、迁移工具、Preflight 检查、Agent 运行时管理、CLI 和 API 操作。在 Claude Code 中管理混合云 CI/CD 流水线。
+
+- **作者**：Buildkite
+- **前置要求**：需配置 Buildkite API Token
+- **使用方法**：自然语言管理 CI/CD Pipeline、触发构建、排查失败原因。
+- **适用场景**：CI/CD 流水线管理、混合云持续集成。
+- **项目主页**：[https://buildkite.com](https://buildkite.com)
+
+##### cds-mcp
+**SAP CAP 应用开发**
+
+SAP Cloud Application Programming Model 的 AI 辅助开发——搜索 CDS 模型和 CAP 文档。加速 SAP 企业级云应用开发。
+
+- **作者**：SAP SE
+- **项目主页**：[https://cap.cloud.sap/](https://cap.cloud.sap/)
+
+##### chrome-devtools-mcp
+**Chrome DevTools 浏览器控制与调试**
+
+在 Claude Code 中控制和检查实时 Chrome 浏览器——录制性能追踪、分析网络请求、检查控制台消息（含 Source Map 堆栈追踪）、截图和自动化浏览器交互。前端调试利器。
+
+- **前置要求**：需安装 Chrome 浏览器
+- **使用方法**：自动化浏览器交互、性能分析（LCP/INP/CLS）、网络请求拦截和修改、DOM 快照和截图、控制台错误排查。
+- **适用场景**：前端调试、性能优化、E2E 测试、浏览器自动化操作。
+- **项目主页**：[https://github.com/ChromeDevTools/chrome-devtools-mcp](https://github.com/ChromeDevTools/chrome-devtools-mcp)
+
+##### circle-skills
+**Circle 稳定币开发**
+
+快速构建稳定币应用——USDC 支付、跨链转账、钱包和智能合约最佳实践，配套 Circle MCP 服务器实时提供 SDK 和文档指导。Web3 支付开发的首选工具包。
+
+- **作者**：Circle
+- **前置要求**：需配置 Circle API Key
+- **使用方法**：自然语言集成 USDC 支付、实现跨链转账、开发钱包功能。
+- **适用场景**：Web3 支付、稳定币集成、区块链开发。
+- **项目主页**：[https://www.circle.com](https://www.circle.com)
+
+##### codspeed
+**CodSpeed 性能测试全工具**
+
+CodSpeed 一体化性能测试工具包——深入 Benchmark 结果、火焰图和性能对比。为 Claude 提供细粒度性能分析上下文，精确定位瓶颈并自动优化。
+
+- **作者**：CodSpeed
+- **项目主页**：[https://codspeed.io](https://codspeed.io)
+
+##### confidence
+**Spotify Confidence Feature Flags**
+
+在 Claude Code 中直接访问 Confidence Feature Flag、实验和迁移工具。管理功能发布、A/B 测试和渐进式迁移。Spotify 出品的特性管理平台。
+
+- **作者**：Spotify Confidence
+- **项目主页**：[https://confidence.spotify.com](https://confidence.spotify.com)
+
+##### data
+**Apache Airflow 数据工程**
+
+面向 Apache Airflow 和 Astronomer 的数据工程插件——按最佳实践编写 DAG、调试 Pipeline 故障、追踪数据血缘。管理本地和云端 Airflow 部署。
+
+- **项目主页**：[https://github.com/astronomer/agents](https://github.com/astronomer/agents)
+
+##### data-agent-kit-starter-pack
+**Google Cloud 数据工程入门套件**
+
+Google Cloud 数据工程师和数据库从业者专用技能套件——通过自然语言提示与 Google Cloud 数据服务交互。覆盖 BigQuery/Dataflow/Dataproc/Composer/PubSub 等服务。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/data-agent-kit-starter-pack](https://github.com/gemini-cli-extensions/data-agent-kit-starter-pack)
+
+##### datarobot-agent-skills
+**DataRobot AI/ML 全流程技能包**
+
+DataRobot 技能包——模型训练、部署、预测、特征工程、监控、可解释性、数据准备、App Framework CI/CD 和外部 Agent 监控。企业级 AI 平台全生命周期管理。
+
+- **作者**：DataRobot
+- **前置要求**：需配置 DataRobot API Token
+- **使用方法**：自然语言管理 AI/ML 全生命周期：数据准备→特征工程→模型训练→部署→监控。
+- **适用场景**：企业 AI/ML 平台管理、模型运维（MLOps）。
+- **项目主页**：[https://datarobot.com](https://datarobot.com)
+
+##### dominodatalab
+**Domino Data Lab 数据科学平台**
+
+完整 Domino Data Lab 平台支持——Workspace、Job、模型部署、实验追踪、GenAI Tracing、Spark/Ray/Dask 分布式计算和应用部署。数据科学团队的协作平台。
+
+- **作者**：Domino Data Lab
+- **项目主页**：[https://www.domino.ai](https://www.domino.ai)
+
+##### expo
+**Expo React Native 开发**
+
+Expo 官方技能包，用于构建、部署、升级和调试 React Native 应用。覆盖 Expo Router UI 开发、SwiftUI/Jetpack Compose 原生组件、Tailwind CSS 集成、EAS Build 和热更新。
+
+- **前置要求**：需在 Expo 项目中
+- **使用方法**：自然语言创建 React Native 组件、配置路由、调试构建问题、生成原生模块。
+- **适用场景**：React Native 跨平台应用开发、移动端快速原型。
+- **项目主页**：[https://github.com/expo/skills/blob/main/plugins/expo/README.md](https://github.com/expo/skills/blob/main/plugins/expo/README.md)
+
+##### firecrawl
+**Firecrawl 网页抓取与爬虫**
+
+基于 Firecrawl API 的网页抓取和爬虫插件，将任意网站转换为干净的 LLM 友好 Markdown 或结构化 JSON 数据。支持单页抓取、全站爬取和结构化信息提取。
+
+- **前置要求**：需配置 Firecrawl API Key
+- **使用方法**：单页抓取为 Markdown、全站爬取、网页搜索、结构化数据提取（JSON 格式）。
+- **适用场景**：网页数据采集、文档抓取、竞品分析。
+- **项目主页**：[https://github.com/firecrawl/firecrawl-claude-plugin.git](https://github.com/firecrawl/firecrawl-claude-plugin.git)
+
+##### forge-skills
+**Atlassian Forge 应用开发**
+
+Atlassian Forge 专注技能和 MCP 配置——脚手架和部署 Forge 应用（forge create、模板、开发空间）、构建 Teamwork Graph 连接器用于 Rovo Search/Chat。
+
+- **作者**：Atlassian
+- **项目主页**：[https://developer.atlassian.com/platform/forge/](https://developer.atlassian.com/platform/forge/)
+
+##### huggingface-skills
+**HuggingFace AI 模型开发**
+
+在 Claude Code 中构建、训练、评估和使用开源 AI 模型、数据集和 Spaces，覆盖完整的机器学习工作流——从模型搜索到部署推理。
+
+- **前置要求**：需配置 HuggingFace Token
+- **使用方法**：自然语言搜索和下载模型、上传数据集、管理 Spaces 部署、训练和评估模型、使用推理 API。
+- **适用场景**：AI 模型开发、数据集管理、模型部署、开源 ML 研究。
+- **项目主页**：[https://github.com/huggingface/skills.git](https://github.com/huggingface/skills.git)
+
+##### idmp-plugin
+**TDengine IDMP 数据管理平台**
+
+TDengine IDMP 插件——包含数据发现、Schema 检查和安全运维工作流技能包。面向时序数据库的智能管理和运维。
+
+- **作者**：TaosData
+- **项目主页**：[https://github.com/taosdata/agent-skills](https://github.com/taosdata/agent-skills)
+
+##### liquid-lsp
+**Shopify Liquid 语言服务器**
+
+通过 Shopify CLI 主题语言服务器为 Liquid 模板提供 LSP 集成——智能补全、语法诊断和格式化。Shopify 主题开发的必备语言工具。
+
+- **作者**：Shopify
+- **项目主页**：[https://github.com/Shopify/liquid-skills/tree/main/plugins/liquid-lsp](https://github.com/Shopify/liquid-skills/tree/main/plugins/liquid-lsp)
+
+##### liquid-skills
+**Shopify Liquid 模板开发**
+
+Shopify Liquid 语言基础、CSS/JS/HTML 编码规范和 WCAG 无障碍模式。Shopify 主题开发的完整知识体系和最佳实践。
+
+- **作者**：Shopify
+- **项目主页**：[https://github.com/Shopify/liquid-skills/tree/main/plugins/liquid-skills](https://github.com/Shopify/liquid-skills/tree/main/plugins/liquid-skills)
+
+##### lovable
+**Lovable 应用构建平台**
+
+在 Claude Code 中构建、迭代、部署和管理 Lovable 应用——集成官方 Lovable MCP 服务器（远程 OAuth 2.1），提供聚焦的 build/iterate/database 工作流命令。
+
+- **作者**：Lovable
+- **前置要求**：需完成 Lovable OAuth 授权
+- **使用方法**：通过聚焦的 build/iterate/database 工作流命令快速构建和迭代全栈应用。
+- **适用场景**：快速应用原型、全栈应用构建。
+- **项目主页**：[https://lovable.dev](https://lovable.dev)
+
+##### lumen
+**Lumen 本地语义代码搜索**
+
+通过 MCP 进行精确的本地语义代码搜索——使用 Go AST 解析索引代码库、Ollama 或 LM Studio 进行向量嵌入、通过 MCP 服务器暴露向量搜索给 Claude。无需云端、无需 npm，全部本地运行。
+
+- **作者**：Ory Corp
+- **项目主页**：[https://www.ory.sh](https://www.ory.sh)
+
+##### mcp-apps
+**MCP Apps SDK 开发**
+
+使用 MCP Apps SDK 创建 MCP 应用的技能——学习 MCP 应用开发模式、工具设计、认证集成和部署最佳实践。
+
+- **作者**：Anthropic / Model Context Protocol
+- **项目主页**：[https://modelcontextprotocol.io](https://modelcontextprotocol.io)
+
+##### mercadopago
+**Mercado Pago 支付集成**
+
+Mercado Pago 全产品集成工具包——一个 Agent 路由到四个编排技能（集成向导、Webhook 管理、测试设置、代码审查）。自动拉取每个端点的负载和代码片段。拉丁美洲支付首选方案。
+
+- **作者**：Mercado Pago Developer Experience
+- **项目主页**：[https://github.com/mercadopago/mercadopago-claude-marketplace/tree/main/plugins/mercadopago](https://github.com/mercadopago/mercadopago-claude-marketplace/tree/main/plugins/mercadopago)
+
+##### mergify
+**Mergify 合并队列与测试洞察**
+
+Mergify CLI 技能——管理合并队列、堆叠 PR、测试洞察（Flaky 测试检测和隔离）、合并保护规则和 Mergify 配置管理。直接在终端控制合并自动化。
+
+- **作者**：Mergify
+- **项目主页**：[https://mergify.com](https://mergify.com)
+
+##### microsoft-docs
+**Microsoft 官方文档查询**
+
+访问 Microsoft 官方文档、API 参考和代码示例——覆盖 Azure、.NET、Windows 等 Microsoft 技术栈。在 Claude 中直接查阅权威文档，无需离开开发环境。
+
+- **项目主页**：[https://github.com/microsoftdocs/mcp](https://github.com/microsoftdocs/mcp)
+
+##### migration-to-aws
+**GCP → AWS 迁移规划**
+
+规划从 Google Cloud Platform（及 OpenAI/Gemini AI 工作负载）到 AWS 的迁移——分析 IaC 文件、应用代码和 GCP 账单数据，发现资源、设计 AWS 架构方案并生成迁移路线图。
+
+- **作者**：Amazon Web Services
+- **项目主页**：[https://github.com/awslabs/startups](https://github.com/awslabs/startups)
+
+##### mintlify
+**Mintlify 文档站点构建**
+
+使用 Mintlify 构建漂亮的文档站点——将非 Markdown 文件转换为格式正确的 MDX 页面，添加和修改内容并使用正确的组件。自动化文档更新和维护。
+
+- **项目主页**：[https://www.mintlify.com/](https://www.mintlify.com/)
+
+##### netlify-skills
+**Netlify 平台开发技能包**
+
+Netlify 平台 Claude Code 技能——Functions、Edge Functions、Blobs、Database、Image CDN、Forms、配置、CLI、框架集成、缓存策略、AI Gateway 和部署。Jamstack 部署全覆盖。
+
+- **项目主页**：[https://github.com/netlify/context-and-tools](https://github.com/netlify/context-and-tools)
+
+##### netsuite-suitecloud
+**NetSuite SuiteCloud 开发**
+
+Oracle NetSuite Agent 技能——SuiteCloud Development Framework（SDF）对象和 UIF SPA 组件的编写指导，以及 NetSuite AI Service Connector 的运行时指导。
+
+- **作者**：Oracle NetSuite
+- **项目主页**：[https://github.com/oracle/netsuite-suitecloud-sdk](https://github.com/oracle/netsuite-suitecloud-sdk)
+
+##### nvidia-skills
+**NVIDIA 加速计算（从 cuOpt 开始）**
+
+NVIDIA Agent 技能包——加速计算工作流，从 cuOpt 车辆路径优化（VRP/TSP/PDP）开始，通过 cuOpt Python API 解决运筹优化问题。后续将扩展更多 NVIDIA 加速库。
+
+- **作者**：NVIDIA
+- **前置要求**：需安装 NVIDIA CUDA 工具链
+- **使用方法**：自然语言调用 NVIDIA GPU 加速计算、解决优化问题、管理 CUDA 应用。
+- **适用场景**：GPU 加速计算、AI 推理优化、运筹优化问题求解。
+- **项目主页**：[https://github.com/NVIDIA/skills](https://github.com/NVIDIA/skills)
+
+##### oracle-ai-data-platform-workbench-databricks-migrator
+**Oracle AIDP Databricks 迁移工具**
+
+用自然语言驱动 Oracle AI Data Platform Databricks 迁移工具包——规划和执行 Databricks → AIDP 自动迁移。包括 Notebook、Job、Schedule 和 Catalog DDL，Parquet → Delta 格式转换。
+
+- **作者**：Oracle
+- **项目主页**：[https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html](https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html)
+
+##### oracle-ai-data-platform-workbench-engineer-agent
+**Oracle AIDP 工程师 Agent（37 Skills）**
+
+Oracle AI Data Platform Workbench 工程师 Agent——37 个技能覆盖完整 Spark/Delta Lakehouse 自然语言操作。发现目录生成缓存、管理 OCI Data Flow 集群、从 Databricks 迁移、执行 Spark SQL 和 PySpark。
+
+- **作者**：Oracle
+- **项目主页**：[https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html](https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html)
+
+##### oracle-ai-data-platform-workbench-spark-connectors
+**Oracle AIDP Spark 连接器（18 Skills）**
+
+Oracle AI Data Platform Workbench Spark 连接器——18 个连接器技能覆盖全部数据源：Oracle Autonomous DB 家族（ALH/ADW/ATP）通过 wallet、MySQL、PostgreSQL、SQL Server、MongoDB、Kafka、S3 兼容存储等。
+
+- **作者**：Oracle
+- **项目主页**：[https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html](https://docs.oracle.com/en/cloud/paas/ai-data-platform/index.html)
+
+##### outputai
+**Output.ai 工作流开发工具包**
+
+Output.ai 工作流开发工具包——5 个专业 Agent（planner/builder/debugger/prompt writer/quality reviewer）、40+ 斜杠命令技能。覆盖脚手架搭建、调试和质量审查全流程。
+
+- **作者**：Output.ai
+- **项目主页**：[https://output.ai](https://output.ai)
+
+##### pixeltable
+**Pixeltable 多模态 AI 应用开发**
+
+使用 Pixeltable 构建多模态 AI 应用——表、计算列、嵌入搜索、UDF、Tool-calling Agent。支持 25+ AI 提供商集成。在 Claude Code 中管理多模态数据处理流水线。
+
+- **作者**：Pixeltable
+- **项目主页**：[https://docs.pixeltable.com](https://docs.pixeltable.com)
+
+##### postman
+**Postman API 全生命周期管理**
+
+Claude Code 的完整 API 生命周期管理——同步 Collections、生成客户端代码、发现 API、运行测试、创建 Mock、发布文档和审计安全。通过 Postman MCP 服务器驱动。
+
+- **项目主页**：[https://learning.postman.com/docs/developer/postman-mcp-server/](https://learning.postman.com/docs/developer/postman-mcp-server/)
+
+##### preset-cli-skills
+**Preset CLI（Apache Superset）**
+
+Preset CLI 技能——通过 `sup` CLI（PyPI 包 superset-sup）驱动显式 Shell、脚本和 CI/CD 工作流。用于管理 Apache Superset 仪表板和数据集。
+
+- **作者**：Preset
+- **项目主页**：[https://www.preset.io](https://www.preset.io)
+
+##### pydantic-ai
+**Pydantic AI 开发辅助**
+
+编写准确的 Pydantic AI 代码——提供最新模式、决策树和常见陷阱指导，覆盖 Agent、Tool、Structured Output、Streaming 和多 Agent 应用。从零开始生成最佳实践代码。
+
+- **前置要求**：需安装 pydantic-ai 包
+- **使用方法**：自然语言生成 Pydantic AI 代码，自动遵循最佳实践，避免常见错误陷阱。
+- **适用场景**：AI Agent 开发、结构化输出、多 Agent 应用。
+- **项目主页**：[https://github.com/pydantic/skills/tree/main/plugins/ai](https://github.com/pydantic/skills/tree/main/plugins/ai)
+
+##### qodo-skills
+**Qodo 代码质量技能库**
+
+Qodo 精选的可复用 AI Agent 能力库——扩展 Claude 的软件开发功能。每个 Skill 无缝集成到开发工作流中，提升代码质量和开发效率。
+
+- **项目主页**：[https://github.com/qodo-ai/qodo-skills.git](https://github.com/qodo-ai/qodo-skills.git)
+
+##### qt-development-skills
+**Qt C++/QML 开发技能包**
+
+Qt 软件开发的 Agentic 工程技能——Qt C++/QML 代码审查、QML 编码支持和 Qt C++/QML 代码文档生成。覆盖桌面、嵌入式和移动端 Qt 开发。
+
+- **作者**：Qt Group
+- **项目主页**：[https://www.qt.io/](https://www.qt.io/)
+
+##### quarkus-agent
+**Quarkus Java 微服务开发**
+
+面向 AI 编码 Agent 的 Quarkus MCP 服务器——提供项目脚手架、Dev Mode 生命周期管理、扩展技能、Dev MCP 代理和文档查询。Java 云原生微服务 Supersonic Subatomic 开发体验。
+
+- **作者**：Quarkus
+- **项目主页**：[https://quarkus.io](https://quarkus.io)
+
+##### rc
+**RevenueCat 应用内购买配置**
+
+在 Claude Code 中配置 RevenueCat 项目、应用、产品、Entitlement 和 Offering。管理应用内购买后端而无需离开开发工作流。
+
+- **项目主页**：[https://www.revenuecat.com](https://www.revenuecat.com)
+
+##### resend
+**Resend 邮件服务**
+
+Resend Agent 技能包——邮件 API 集成、Agent Inbox、CLI 和 React Email 组件，包含 Resend MCP 服务器。现代开发者邮件发送的首选方案。
+
+- **作者**：Resend
+- **前置要求**：需配置 Resend API Key
+- **使用方法**：自然语言生成和发送邮件、管理邮件模板、配置 Webhook、处理邮件事件。
+- **适用场景**：事务邮件、营销邮件、邮件通知系统。
+- **项目主页**：[https://resend.com](https://resend.com)
+
+##### revenuecat
+**RevenueCat 应用内购买配置**
+
+在 Claude Code 中配置 RevenueCat 项目、应用、产品、Entitlement 和 Offering。管理应用内购买后端，支持 iOS/Android/Web 多平台订阅管理。
+
+- **项目主页**：[https://www.revenuecat.com](https://www.revenuecat.com)
+
+##### rill
+**Rill 商业智能平台**
+
+在 Rill 商业智能平台中开发和查询项目的技能——快速构建数据仪表板和指标。支持交互式数据探索和实时分析。
+
+- **作者**：Rill Data
+- **项目主页**：[https://docs.rilldata.com/developers/build/ai-configuration](https://docs.rilldata.com/developers/build/ai-configuration)
+
+##### sagemaker-ai
+**Amazon SageMaker AI 模型开发**
+
+将深度 AWS AI/ML 专业知识带入编码助手——覆盖 Amazon SageMaker AI 全表面区域：数据准备、模型训练、调优、部署和 MLOps。
+
+- **项目主页**：[https://github.com/awslabs/agent-plugins](https://github.com/awslabs/agent-plugins)
+
+##### sanity
+**Sanity 内容平台集成**
+
+Sanity 内容平台集成——MCP 服务器、Agent 技能和斜杠命令。查询和编写内容、构建和优化 GROQ 查询、设计 Schema、设置 Visual Editing。Headless CMS 的首选开发工具。
+
+- **作者**：Sanity
+- **项目主页**：[https://www.sanity.io](https://www.sanity.io)
+
+##### sap-cds-mcp
+**SAP CAP MCP 服务器**
+
+SAP Cloud Application Programming Model 的 MCP 服务器——在 Claude Code 中进行 AI 辅助 SAP CAP 项目开发。搜索 CDS 模型和 CAP 文档。
+
+- **作者**：SAP SE
+- **项目主页**：[https://cap.cloud.sap/](https://cap.cloud.sap/)
+
+##### sap-fiori-mcp-server
+**SAP Fiori MCP 服务器**
+
+SAP Fiori 开发工具的 MCP 服务器——在 Claude Code 中通过 AI 辅助构建和修改 SAP Fiori 应用。加速 SAP 企业前端开发。
+
+- **作者**：SAP SE
+- **项目主页**：[https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server](https://github.com/SAP/open-ux-tools/tree/main/packages/fiori-mcp-server)
+
+##### sap-mdk-server
+**SAP 移动开发工具包（MDK）MCP**
+
+SAP Mobile Development Kit 的 MCP 服务器——AI 辅助构建和修改 MDK 应用：Schema 查询、Action 验证、规则编辑和项目脚手架。企业移动应用的快速开发工具。
+
+- **作者**：SAP SE
+- **项目主页**：[https://help.sap.com/docs/MDK](https://help.sap.com/docs/MDK)
+
+##### servicenow-sdk
+**ServiceNow 应用开发**
+
+通过 Claude AI 轻松创建、编辑和部署 ServiceNow 应用——使用 Fluent SDK 进行企业级工作流和 ITSM 应用开发。
+
+- **作者**：ServiceNow
+- **项目主页**：[https://servicenow.github.io/sdk/](https://servicenow.github.io/sdk/)
+
+##### shopify
+**Shopify 开发者工具**
+
+Shopify Claude Code 开发者工具——搜索 Shopify 文档、生成和验证 GraphQL 查询、Liquid 模板和 UI Extension 代码。Shopify 应用和主题开发的核心工具。
+
+- **作者**：Shopify
+- **前置要求**：需配置 Shopify 合作伙伴账号
+- **使用方法**：自然语言生成 Shopify 主题代码、验证 GraphQL 查询、创建 App Extension。
+- **适用场景**：Shopify 主题开发、Shopify App 开发、电商定制开发。
+- **项目主页**：[https://shopify.dev/docs/apps/build/devmcp](https://shopify.dev/docs/apps/build/devmcp)
+
+##### shopify-ai-toolkit
+**Shopify AI 工具包（18 Skills）**
+
+Shopify AI 工具包——18 个开发技能覆盖文档搜索、API Schema 访问、GraphQL 和 Liquid 代码验证、Hydrogen 店面开发、Polaris 组件等。Shopify 平台全场景开发的完整技能栈。
+
+- **作者**：Shopify
+- **项目主页**：[https://shopify.dev](https://shopify.dev)
+
+##### snowflake-cortex-code
+**Snowflake Cortex Code 集成**
+
+自动将 Snowflake 相关提示路由到 Cortex Code 执行，提供代码审查和任务委托的斜杠命令。在 Claude 中直接使用 Snowflake AI 编码和数据分析能力。
+
+- **作者**：Snowflake
+- **前置要求**：需配置 Snowflake 账号
+- **使用方法**：在 Claude 中直接编写和优化 Snowflake SQL、管理数据仓库、部署 Cortex AI 模型。
+- **适用场景**：Snowflake 数据仓库开发、AI 模型部署、数据分析。
+- **项目主页**：[https://docs.snowflake.com/en/user-guide/cortex-code](https://docs.snowflake.com/en/user-guide/cortex-code)
+
+##### sourcegraph
+**Sourcegraph 代码搜索与理解**
+
+跨代码库的代码搜索和理解——搜索/阅读/追踪跨仓库引用、分析重构影响、通过提交和 Diff 搜索调查事故、运行有针对性的安全审计。大型代码库导航的首选工具。
+
+- **前置要求**：需配置 Sourcegraph 实例地址和 Token
+- **使用方法**：语义搜索代码库、追踪引用关系、分析代码变更影响范围、安全漏洞批量排查。
+- **适用场景**：大型代码库搜索、代码引用分析、安全审计。
+- **项目主页**：[https://sourcegraph.com](https://sourcegraph.com)
+
+##### stripe
+**Stripe 支付集成**
+
+在 Claude Code 中编写和调试 Stripe 支付代码，自动生成 Payment Intent、Webhook 处理、退款和订阅管理代码，检查支付流程安全性与 PCI DSS 合规性。覆盖一次性支付/订阅/分期/发票管理全场景。
+
+- **前置要求**：需配置 Stripe API Key
+- **使用方法**：自动生成支付代码、查询订单和客户数据、扫描支付安全漏洞、生成财务报表和对账统计。
+- **适用场景**：电商支付、SaaS 订阅系统、支付流程调试。
+- **项目主页**：[https://github.com/stripe/ai/tree/main/providers/claude/plugin](https://github.com/stripe/ai/tree/main/providers/claude/plugin)
+
+##### sumup
+**SumUp 支付终端与在线支付**
+
+SumUp 支付集成——覆盖终端支付和在线 Checkout 流程。构建 Android/iOS POS 应用（SumUp 读卡器）、在线 Checkout（Server SDK 和 Checkout Widget）、控制读卡器设置。
+
+- **项目主页**：[https://www.sumup.com/](https://www.sumup.com/)
+
+##### superpowers
+**Superpowers 开发方法论**
+
+Superpowers 教授 Claude 脑暴方法、子代理驱动开发（内置代码审查）、系统化调试和红/绿 TDD 测试驱动开发。还教授 Claude 编写和测试新 Skill 的方法论。提升 Claude Code 使用效率的元技能包。
+
+- **项目主页**：[https://github.com/obra/superpowers.git](https://github.com/obra/superpowers.git)
+
+##### tavily
+**Tavily 实时 Web 数据 API**
+
+使用 Tavily 的搜索、提取、爬取和研究 API 构建 AI 应用——获取实时 Web 数据、提取网页内容、进行深度在线研究。为 AI Agent 提供实时互联网信息。
+
+- **作者**：Tavily Team
+- **前置要求**：需配置 Tavily API Key
+- **使用方法**：自然语言搜索最新信息、抓取网页内容、进行多源深度研究。
+- **适用场景**：AI 应用开发、实时信息检索、网页内容提取。
+- **项目主页**：[https://www.tavily.com/](https://www.tavily.com/)
+
+##### teamcity-cli
+**TeamCity CI/CD CLI 集成**
+
+通过 teamcity CLI 与 TeamCity CI/CD 交互的 Agent 技能——探索构建、查看日志、启动作业、管理队列和 Agent 等。JetBrains CI/CD 平台的终端操作工具。
+
+- **作者**：JetBrains
+- **项目主页**：[https://www.jetbrains.com/teamcity/](https://www.jetbrains.com/teamcity/)
+
+##### togetherai-skills
+**Together AI 平台开发技能**
+
+Together AI 平台 Agent 技能——推理、训练、嵌入、音频、视频、图片、函数调用和基础设施管理。覆盖 Serverless Chat Completions、图像/视频生成、微调、专用端点等全套 AI 云服务。
+
+- **作者**：Together AI
+- **项目主页**：[https://www.together.ai](https://www.together.ai)
+
+##### twilio-developer-kit
+**Twilio 通信开发工具包**
+
+Twilio 技能为 AI 编码 Agent 提供过程性知识——使用哪些 API、按什么顺序、需要避免什么。覆盖 SMS、Voice、WhatsApp、Verify、SendGrid、合规和 30+ 产品。通信 API 开发的完整指南。
+
+- **作者**：Twilio
+- **项目主页**：[https://www.twilio.com](https://www.twilio.com)
+
+##### ui5
+**SAPUI5/OpenUI5 开发**
+
+面向编码 Agent 的 SAPUI5/OpenUI5 插件——创建和验证 UI5 项目、访问 API 文档、运行 UI5 Linter。获取 UI5 开发指南和最佳实践。SAP 前端框架的核心开发工具。
+
+- **作者**：SAP SE
+- **项目主页**：[https://github.com/UI5/plugins-coding-agents](https://github.com/UI5/plugins-coding-agents)
+
+##### ui5-modernization
+**UI5 现代化改造**
+
+完整的 UI5 现代化工具包——提供工作流和专用修复模式，用于现代化 SAPUI5/OpenUI5 应用。从旧版 UI5 迁移到最新版本的结构化升级方案。
+
+- **作者**：SAP SE
+- **项目主页**：[https://github.com/UI5/plugins-coding-agents](https://github.com/UI5/plugins-coding-agents)
+
+##### ui5-typescript-conversion
+**UI5 JavaScript → TypeScript 转换**
+
+面向编码 Agent 的 SAPUI5/OpenUI5 插件——将 JavaScript 编写的 UI5 项目转换为 TypeScript。享受类型安全和更好的开发体验。
+
+- **作者**：SAP SE
+- **项目主页**：[https://github.com/UI5/plugins-coding-agents](https://github.com/UI5/plugins-coding-agents)
+
+##### unreal-engine-skills-for-claude-code
+**Unreal Engine 编辑器 MCP 控制**
+
+通过 MCP 从 Claude Code 直接控制 Unreal Editor——数百个工具通过 Unreal 的 ToolsetRegistry 暴露，覆盖 Actors、Blueprints、Materials、Niagara、Control Rigs、Sequencer、Static Meshes 等 30+ 工具集。
+
+- **作者**：Epic Games
+- **前置要求**：需运行 Unreal Editor 并启用 MCP 插件
+- **使用方法**：自然语言操作 Unreal Engine 编辑器：创建/修改 Actor、编辑 Blueprint、调整材质、控制 Niagara 粒子、编辑 Sequencer 动画。
+- **适用场景**：游戏开发、虚拟制作、实时 3D 内容创作。
+- **项目主页**：[https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor](https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor)
+
+##### wix
+**Wix 站点与应用开发**
+
+构建、管理和部署 Wix 站点和应用——CLI 开发技能覆盖 Dashboard Extensions、后端 API、站点 Widget 和服务插件（使用 Wix Design System）。以及站点管理的 MCP 服务器。
+
+- **项目主页**：[https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills](https://dev.wix.com/docs/wix-cli/guides/development/about-wix-skills)
+
+##### zoom-plugin
+**Zoom 集成开发插件**
+
+Claude 插件用于规划、构建和调试 Zoom 集成——覆盖 REST API、SDK、Webhook、Bot 和 MCP 工作流。Zoom 视频通信平台的全场景开发工具。
+
+- **项目主页**：[https://developers.zoom.us/](https://developers.zoom.us/)
+
+## 效率协作（productivity）- 28 个
+
+##### airtable
+**Airtable 数据库与运营平台**
+
+Airtable 是 Agent 的数据库和运营层——无论运行产品、营销、销售、运营、HR 还是自定义业务应用。结合结构化数据与多人可视化界面。在 Claude Code 中管理 Airtable Base。
+
+- **作者**：Airtable
+- **项目主页**：[https://www.airtable.com](https://www.airtable.com)
+
+##### airwallex-agentos
+**Airwallex 全球金融基础设施**
+
+将 Airwallex 的全球金融基础设施带入 Claude——用自然语言编排账户操作：从 PO 设置发票、从发票入驻供应商、查询当前汇率和账户余额。跨境支付和金融服务的一站式管理。
+
+- **作者**：Airwallex
+- **项目主页**：[https://www.airwallex.com/docs](https://www.airwallex.com/docs)
+
+##### apollo
+**Apollo.io B2B 销售智能平台**
+
+搜索潜在客户、丰富联系人数据、加载外展序列并查询销售分析。Apollo.io 一键式 MCP 服务器集成。B2B 销售全流程的数据驱动工具。
+
+- **作者**：Apollo.io
+- **项目主页**：[https://www.apollo.io/](https://www.apollo.io/)
+
+##### atlassian
+**Atlassian（Jira + Confluence）集成**
+
+连接 Atlassian 产品包括 Jira 和 Confluence——搜索和创建 Issue、访问文档、管理 Sprint。在 Claude Code 中直接操作项目和知识库。
+
+- **前置要求**：需配置 Atlassian API Token
+- **使用方法**：自然语言操作 Jira Issue 和 Confluence 文档，查询 Sprint 进度、创建技术文档。
+- **适用场景**：敏捷项目管理、技术文档协作。
+- **项目主页**：[https://github.com/atlassian/atlassian-mcp-server](https://github.com/atlassian/atlassian-mcp-server)
+
+##### box
+**Box 云存储集成**
+
+在 Claude Code 中直接操作 Box 内容——搜索文件、整理文件夹、团队协作。使用 Box AI 回答问题、总结文档和提取数据。企业级云存储的 AI 化操作体验。
+
+- **项目主页**：[https://github.com/box/box-for-ai](https://github.com/box/box-for-ai)
+
+##### carta-cap-table
+**Carta 股权表管理**
+
+Carta 股权表插件——查询股权表、股权授予、SAFE、409A 估值、Waterfall 场景分析等。创业公司股权管理的专业工具。
+
+- **作者**：Carta Engineering
+- **项目主页**：[https://carta.com](https://carta.com)
+
+##### carta-crm
+**Carta CRM 投资者关系管理**
+
+用对话方式管理 Carta CRM——通过 Carta CRM MCP 服务器搜索、添加、更新和丰富投资者、公司、联系人、交易、笔记和融资轮次数据。
+
+- **作者**：Carta Engineering
+- **项目主页**：[https://carta.com](https://carta.com)
+
+##### carta-investors
+**Carta 投资者数据与分析**
+
+Carta Investors 插件——查询投资者数据、业绩基准、监管报告、AGM Deck 生成、品牌提取等。投资组合管理的专业数据工具。
+
+- **作者**：Carta Engineering
+- **项目主页**：[https://carta.com](https://carta.com)
+
+##### circleback
+**Circleback 会议与通讯上下文**
+
+Circleback 对话上下文集成——搜索和访问会议、邮件、日历事件等。在 Claude Code 中获取完整的沟通上下文和历史记录。
+
+- **项目主页**：[https://github.com/circlebackai/claude-code-plugin.git](https://github.com/circlebackai/claude-code-plugin.git)
+
+##### coderabbit
+**CodeRabbit AI 代码审查**
+
+你的代码审查伙伴——CodeRabbit 使用专用 AI 架构和 40+ 集成静态分析器提供外部验证。提供不同于 Claude 的视角，捕获 Bug、安全漏洞和设计问题。第二双眼睛的代码审查。
+
+- **项目主页**：[https://github.com/coderabbitai/skills](https://github.com/coderabbitai/skills)
+
+##### desktop-commander
+**Desktop Commander 终端与文件全能操作**
+
+MCP 服务器用于终端命令、进程管理和文件操作——覆盖文本、代码、PDF、DOCX、Excel、图片和结构化数据。桌面级全能文件操作和管理工具。
+
+- **作者**：Desktop Commander
+- **项目主页**：[https://desktopcommander.app](https://desktopcommander.app)
+
+##### dropbox
+**Dropbox 云存储集成**
+
+Dropbox Claude 插件——将 Dropbox 文件直接连接到 Claude，无需切换工具即可搜索、整理、保存生成的内容和创建分享链接。尊重现有文件夹权限，安全可靠。
+
+- **作者**：Dropbox
+- **项目主页**：[https://www.dropbox.com](https://www.dropbox.com)
+
+##### exa
+**Exa AI Web 搜索与深度研究**
+
+Exa AI Web 搜索、深度研究和内容提取——提供 MCP 工具和研究技能，用于综合 Web 搜索、人物发现、公司研究、学术论文检索。高质量语义搜索的 AI 原生方案。
+
+- **作者**：Exa
+- **前置要求**：需配置 Exa API Key
+- **使用方法**：自然语言进行深度 Web 搜索、公司/人物调研、学术文献检索。
+- **适用场景**：深度研究、竞品分析、学术检索。
+- **项目主页**：[https://exa.ai/docs/reference/exa-mcp](https://exa.ai/docs/reference/exa-mcp)
+
+##### hunter
+**Hunter.io 邮件发现与验证**
+
+在 Claude 中直接查找和验证专业邮箱地址、按域名搜索联系人和丰富公司数据。B2B 外展和线索挖掘的必备工具。
+
+- **作者**：Hunter.io
+- **项目主页**：[https://hunter.io](https://hunter.io)
+
+##### intercom
+**Intercom 客户服务平台集成**
+
+Intercom Claude Code 集成——搜索对话、分析客户支持模式、查找联系人和公司、安装 Intercom Messenger。在开发环境中直接获取客户反馈和支持数据。
+
+- **项目主页**：[https://github.com/intercom/claude-plugin-external](https://github.com/intercom/claude-plugin-external)
+
+##### legalzoom
+**LegalZoom 法律文档审查**
+
+商业和个人法律需求的律师指导和法律工具——AI 驱动的文档审查识别关键风险和重要条款，建议何时聘请律师，并引导至 LegalZoom 法律服务。创业者的法律助手。
+
+- **项目主页**：[https://www.legalzoom.com/](https://www.legalzoom.com/)
+
+##### lusha
+**Lusha B2B 销售智能**
+
+使用 Lusha 的 B2B 智能平台搜索潜在客户、丰富数据并构建可呼叫的线索列表。提供验证电话号码、公司信号和相似客户定位。销售团队的数据引擎。
+
+- **作者**：Lusha
+- **项目主页**：[https://www.lusha.com](https://www.lusha.com)
+
+##### monday-crm
+**monday.com CRM 管理**
+
+用自然语言运营 monday CRM——从零构建 Pipeline、以排名交易简报开启一天、生成预测仪表板、审计看板健康度、批量清理脏数据。将通话记录转为结构化 CRM 数据。
+
+- **作者**：monday.com
+- **项目主页**：[https://monday.com](https://monday.com)
+
+##### notion
+**Notion 工作空间集成**
+
+在 Claude Code 中搜索 Notion 页面、创建和更新文档、管理数据库，直接访问团队知识库，无缝衔接文档工作流与开发流程。
+
+- **前置要求**：需配置 Notion API Key
+- **使用方法**：自然语言搜索和管理 Notion 内容、创建会议记录/技术文档、更新数据库条目。
+- **适用场景**：团队知识库管理、文档自动化、项目管理。
+- **项目主页**：[https://github.com/makenotion/claude-code-notion-plugin](https://github.com/makenotion/claude-code-notion-plugin)
+
+##### pigment
+**Pigment 商业数据分析**
+
+通过自然语言分析商业数据并构建自定义 Pigment 模型、指标和看板。在 Claude Code 中进行企业级商业智能分析和规划。
+
+- **作者**：Pigment
+- **项目主页**：[https://www.pigment.com](https://www.pigment.com)
+
+##### save-to-spotify
+**Spotify 音频内容发布**
+
+创建专业音频内容——TTS 旁白、丰富的时间线、封面图。通过 save-to-spotify CLI 保存到 Spotify。将文本转化为播客和音频内容的创意工具。
+
+- **作者**：Spotify
+- **项目主页**：[https://github.com/spotify/save-to-spotify](https://github.com/spotify/save-to-spotify)
+
+##### slack
+**Slack 即时通讯集成**
+
+在 Claude Code 中搜索 Slack 消息、访问频道、读取线程、发送通知，保持与团队沟通的连接。支持代码合并/部署完成后自动发送通知。
+
+- **前置要求**：需完成 Slack OAuth 授权
+- **使用方法**：'发送消息到 #研发群：登录接口优化已完成'、'查询 #产品群最近 24 小时的未读消息'。支持自动化事件通知。
+- **适用场景**：团队开发动态同步、自动化通知、跨团队沟通。
+- **项目主页**：[https://github.com/slackapi/slack-mcp-plugin/tree/main](https://github.com/slackapi/slack-mcp-plugin/tree/main)
+
+##### spotify-ads-api
+**Spotify 广告 API 管理**
+
+用自然语言管理 Spotify 广告活动——创建 Campaign/Ad Set/Ad、拉取报告、处理 OAuth 认证。全部通过对话完成。音频广告的程序化管理工具。
+
+- **项目主页**：[https://github.com/spotify/ads-claude-plugin](https://github.com/spotify/ads-claude-plugin)
+
+##### vibe-prospecting
+**Vibe Prospecting B2B 销售数据**
+
+Vibe Prospecting 将 Claude 连接到实时 B2B 公司和联系人数据——搜索、匹配、丰富、过滤和大规模导出潜在客户。将自然语言请求转化为结构化 GTM 工作流。
+
+- **作者**：vibeprospecting.ai
+- **项目主页**：[https://www.vibeprospecting.ai/product/claude-plugin](https://www.vibeprospecting.ai/product/claude-plugin)
+
+##### windsor-ai
+**Windsor.ai 多源数据集成（325+ 数据源）**
+
+通过 Windsor.ai 将 Claude Code 连接到 325+ 业务数据源——查询 Google Ads、Meta、HubSpot、Salesforce、Shopify、Stripe 等营销、销售、CRM、电商、财务和分析数据。统一数据查询层。
+
+- **作者**：Windsor.ai
+- **项目主页**：[https://windsor.ai](https://windsor.ai)
+
+##### youdotcom-agent-skills
+**You.com Agent 搜索技能**
+
+You.com Agent 技能——Web 搜索、带引用的研究、内容提取。为 Vercel AI SDK、Claude Agent SDK、OpenAI Agents SDK、crewAI、LangChain、Microsoft Teams.ai 等提供引导式集成方案。
+
+- **作者**：You.com
+- **项目主页**：[https://you.com](https://you.com)
+
+##### zapier
+**Zapier 自动化集成（8000+ 应用连接）**
+
+在 Claude Code 中发现、启用和执行 Zapier 自动化动作，连接 CRM、邮件、日历、数据库等 8000+ 应用，实现跨应用自动化。
+
+- **前置要求**：需配置 Zapier MCP 连接
+- **使用方法**：自然语言触发 Zapier 自动化流程：'当收到新邮件时，在 Slack 发通知并创建 Todoist 任务'。
+- **适用场景**：跨应用自动化、工作流编排、无代码集成。
+- **项目主页**：[https://github.com/zapier/zapier-mcp/tree/main/plugins/zapier](https://github.com/zapier/zapier-mcp/tree/main/plugins/zapier)
+
+##### zoominfo
+**ZoomInfo B2B 销售情报平台**
+
+搜索公司和联系人、丰富线索、查找相似客户并获取 AI 排名的联系人推荐。预构建的技能将多个 ZoomInfo 工具链成完整的 B2B 销售工作流。企业级销售情报平台。
+
+- **作者**：ZoomInfo
+- **项目主页**：[https://www.zoominfo.com](https://www.zoominfo.com)
+
+## 数据库（database）- 33 个
+
+##### alloydb
+**AlloyDB for PostgreSQL 集成**
+
+在 Claude Code 中创建、连接和操作 AlloyDB for PostgreSQL 数据库。Google Cloud 的高性能 PostgreSQL 兼容数据库，支持自然语言查询和实例管理。
+
+- **作者**：Google LLC
+- **项目主页**：[https://cloud.google.com/alloydb](https://cloud.google.com/alloydb)
+
+##### alloydb-omni
+**AlloyDB Omni 集成**
+
+创建、连接和操作 AlloyDB Omni 数据库——AlloyDB 的可下载版本，支持本地和混合部署场景，在 Claude Code 中通过自然语言管理。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/alloydb-omni](https://github.com/gemini-cli-extensions/alloydb-omni)
+
+##### azure-cosmos-db-assistant
+**Azure Cosmos DB 专家助手**
+
+Azure Cosmos DB 专家助手——提供数据建模指导、查询优化、性能调优和最佳实践建议。支持 NoSQL 和多种 API 模式（SQL/MongoDB/Cassandra/Gremlin/Table）。
+
+- **项目主页**：[https://github.com/AzureCosmosDB/cosmosdb-claude-code-plugin](https://github.com/AzureCosmosDB/cosmosdb-claude-code-plugin)
+
+##### bigdata-com
+**Bigdata.com 金融研究平台**
+
+RavenPack 官方 Bigdata.com 插件，提供金融研究、分析和情报工具，支持自然语言查询金融市场数据、生成研究报告和投资洞察。
+
+- **作者**：RavenPack
+- **项目主页**：[https://docs.bigdata.com](https://docs.bigdata.com)
+
+##### bigquery-data-analytics
+**BigQuery 数据分析**
+
+在 Claude Code 中连接、查询和生成 BigQuery 数据集的数据洞察——支持自然语言编写 SQL、分析数据趋势、管理数据集和表结构。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/bigquery-data-analytics](https://github.com/gemini-cli-extensions/bigquery-data-analytics)
+
+##### clickhouse
+**ClickHouse Cloud 数据库连接**
+
+将 Claude 直接连接到 ClickHouse Cloud 数据库——浏览组织/服务/数据库/表结构，运行只读 SQL 查询，获得即时分析答案，监控查询性能。
+
+- **作者**：ClickHouse
+- **项目主页**：[https://github.com/ClickHouse/clickhouse-claude-code-plugin](https://github.com/ClickHouse/clickhouse-claude-code-plugin)
+
+##### clickhouse-best-practices
+**ClickHouse 最佳实践（28条规则）**
+
+28 条 ClickHouse 最佳实践规则，涵盖 Schema 设计、查询优化和数据摄入，按影响力优先级排序，帮助开发者避免常见陷阱和性能问题。
+
+- **作者**：ClickHouse Inc
+- **项目主页**：[https://clickhouse.com](https://clickhouse.com)
+
+##### cloud-sql-mysql
+**Cloud SQL for MySQL 集成**
+
+在 Claude Code 中连接和操作 Cloud SQL for MySQL 数据库——支持自然语言查询、表结构管理和数据操作。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/cloud-sql-mysql](https://github.com/gemini-cli-extensions/cloud-sql-mysql)
+
+##### cloud-sql-postgresql
+**Cloud SQL for PostgreSQL 集成**
+
+创建、连接和操作 Cloud SQL for PostgreSQL 数据库——支持自然语言管理实例、执行 SQL 查询和数据分析。
+
+- **作者**：Google LLC
+- **项目主页**：[https://cloud.google.com/sql](https://cloud.google.com/sql)
+
+##### cloud-sql-sqlserver
+**Cloud SQL for SQL Server 集成**
+
+连接到 Cloud SQL for SQL Server 实例，在 Claude Code 中通过自然语言管理 SQL Server 数据库和执行查询。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/cloud-sql-sqlserver](https://github.com/gemini-cli-extensions/cloud-sql-sqlserver)
+
+##### cockroachdb
+**CockroachDB 分布式数据库**
+
+将 Claude Code 直接连接到 CockroachDB 集群——探索 Schema、编写优化 SQL、调试查询、管理分布式数据库集群。支持多区域部署和自动分片。
+
+- **作者**：Cockroach Labs
+- **项目主页**：[https://github.com/cockroachdb/claude-plugin](https://github.com/cockroachdb/claude-plugin)
+
+##### convex
+**Convex 实时后端平台**
+
+Convex 官方插件，包含 Convex Skills、convex-expert 子代理（代码编写）、运行时错误监控和 MCP 访问。覆盖后端开发、Schema 设计、实时订阅和文件存储全场景。
+
+- **作者**：Convex
+- **项目主页**：[https://github.com/get-convex/convex-backend-skill](https://github.com/get-convex/convex-backend-skill)
+
+##### databases-on-aws
+**AWS 数据库专家指导**
+
+AWS 数据库产品组合的专家指导——设计 Schema、执行查询、处理迁移。为不同工作负载选择最合适的数据库（RDS/Aurora/DynamoDB/ElastiCache/DocumentDB 等）。
+
+- **项目主页**：[https://github.com/awslabs/agent-plugins](https://github.com/awslabs/agent-plugins)
+
+##### databricks
+**Databricks 数据智能平台**
+
+Databricks 技能包——覆盖 CLI、Apps、Lakebase、Model Serving、Lakeflow Jobs、Spark Declarative Pipelines、DABs 部署和经典到 Serverless 迁移，数据+AI 全流程管理。
+
+- **作者**：Databricks
+- **前置要求**：需配置 Databricks 工作区 URL 和 Token
+- **使用方法**：自然语言管理 Databricks 集群和作业、创建 Lakeflow Pipeline、部署模型服务。
+- **适用场景**：大数据处理、机器学习平台管理、数据工程。
+- **项目主页**：[https://developers.databricks.com/](https://developers.databricks.com/)
+
+##### datahub-skills
+**DataHub 数据目录开发工具包**
+
+DataHub 开发和交互工具包——Connector 规划、PR 审查、目录搜索、元数据丰富、血缘追踪、数据质量管理和连接设置。覆盖数据治理全场景的开源元数据平台。
+
+- **作者**：DataHub
+- **项目主页**：[https://datahub.com](https://datahub.com)
+
+##### dataproc
+**Dataproc 集群与作业管理**
+
+在 Claude Code 中管理 Google Cloud Dataproc 集群和作业——创建/删除集群、提交 Spark/Hadoop 作业、监控运行状态。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/dataproc](https://github.com/gemini-cli-extensions/dataproc)
+
+##### dataverse
+**Microsoft Dataverse 技能包**
+
+Microsoft Dataverse 的 Agent 技能——使用 Dataverse MCP、PAC CLI 和 Python SDK 构建、分析和管理 Dataverse 数据。覆盖 Power Platform 开发全场景。
+
+- **项目主页**：[https://github.com/microsoft/Dataverse-skills](https://github.com/microsoft/Dataverse-skills)
+
+##### duckdb-skills
+**DuckDB 数据分析技能包**
+
+DuckDB 驱动的 Claude Code 技能包——读取任意数据文件（CSV/Parquet/JSON）、附加和查询 DuckDB 数据库、搜索 DuckDB/DuckLake 文档、安装/更新扩展。一站式嵌入式 OLAP 分析。
+
+- **作者**：DuckDB Foundation
+- **项目主页**：[https://duckdb.org](https://duckdb.org)
+
+##### firestore-native
+**Firestore 原生集成**
+
+在 Claude Code 中连接和操作 Firestore 数据库——管理集合、文档和索引，通过自然语言进行 CRUD 操作和复杂查询。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/firestore-native](https://github.com/gemini-cli-extensions/firestore-native)
+
+##### knowledge-catalog
+**Google Cloud 知识目录**
+
+连接到 Knowledge Catalog 以发现、管理、监控和治理数据平台中的数据与 AI 资产。支持元数据管理、数据血缘追踪和数据质量规则。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/knowledge-catalog](https://github.com/gemini-cli-extensions/knowledge-catalog)
+
+##### looker
+**Looker 数据分析平台**
+
+在 Claude Code 中连接 Looker 并使用 LookML 与数据交互——查询数据模型、生成报表、管理 Looker 实例。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/looker](https://github.com/gemini-cli-extensions/looker)
+
+##### mongodb
+**MongoDB 数据库集成**
+
+MongoDB 官方 MCP 服务器 + Skills 插件——连接数据库、探索数据、管理集合、优化查询、生成可靠代码、实现最佳实践，覆盖文档数据库开发全场景。
+
+- **前置要求**：需配置 MongoDB 连接字符串
+- **使用方法**：自然语言查询和管理 MongoDB 数据、创建索引、优化聚合管道、实现数据建模最佳实践。
+- **适用场景**：MongoDB 数据库开发、NoSQL 数据建模、查询性能优化。
+- **项目主页**：[https://www.mongodb.com/docs/mcp-server/overview/](https://www.mongodb.com/docs/mcp-server/overview/)
+
+##### neon
+**Neon Serverless PostgreSQL**
+
+通过 neon-postgres Agent 技能和 Neon MCP 服务器管理 Neon 项目和数据库——创建/删除分支、执行 SQL、监控性能，享受 Serverless PostgreSQL 的弹性伸缩和分支特性。
+
+- **前置要求**：需配置 Neon API Key
+- **使用方法**：自然语言创建和管理 Neon 数据库、执行 SQL、配置数据库分支用于开发和预览。
+- **适用场景**：Serverless 数据库管理、PostgreSQL 开发、预览环境数据库。
+- **项目主页**：[https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres](https://github.com/neondatabase/agent-skills/tree/main/plugins/neon-postgres)
+
+##### oracledb
+**Oracle 数据库集成**
+
+在 Claude Code 中连接、查询和操作 Oracle 数据库——支持自然语言 SQL、表结构管理、性能分析和数据操作。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/oracledb](https://github.com/gemini-cli-extensions/oracledb)
+
+##### pinecone
+**Pinecone 向量数据库**
+
+Pinecone 向量数据库集成——管理向量索引、查询语义相似度、快速原型开发。使用 /quickstart 命令快速启动向量搜索项目，适用于 RAG 和 AI 应用场景。
+
+- **前置要求**：需配置 Pinecone API Key
+- **使用方法**：/quickstart 快速启动 Pinecone 项目，自然语言管理索引和向量数据。
+- **适用场景**：RAG 应用开发、语义搜索、向量存储与检索。
+- **项目主页**：[https://github.com/pinecone-io/pinecone-claude-code-plugin](https://github.com/pinecone-io/pinecone-claude-code-plugin)
+
+##### planetscale
+**PlanetScale MySQL 平台**
+
+托管的 MCP 服务器，访问 PlanetScale 组织、数据库、分支、Schema 和 Insights 数据。支持数据库查询、慢查询分析和组织级管理。MySQL 兼容的 Serverless 数据库平台。
+
+- **项目主页**：[https://planetscale.com/](https://planetscale.com/)
+
+##### qdrant-skills
+**Qdrant 向量搜索引擎技能包**
+
+Qdrant 向量搜索 Agent 技能包——覆盖扩展、性能优化、搜索质量、监控、部署、模型迁移、版本升级和 Python/TypeScript/Rust/Go SDK 使用。全方位的向量搜索引擎运维指南。
+
+- **作者**：Qdrant
+- **前置要求**：需配置 Qdrant 服务地址
+- **使用方法**：自然语言管理 Qdrant 集群、优化搜索质量、执行版本升级。
+- **适用场景**：向量搜索引擎管理、语义搜索优化。
+- **项目主页**：[https://skills.qdrant.tech](https://skills.qdrant.tech)
+
+##### redis-development
+**Redis 开发最佳实践**
+
+Redis 开发最佳实践技能包——数据结构选择、查询引擎使用、向量搜索配置、缓存策略设计和性能优化。覆盖 Redis 七大核心能力的完整开发指南。
+
+- **作者**：Redis
+- **项目主页**：[https://redis.io](https://redis.io)
+
+##### sap-hana-cli
+**SAP HANA CLI 工具包（150+ 工具）**
+
+面向 AI 助手的 150+ SAP HANA 数据库工具——查询表、导入/导出数据、数据质量分析、Schema 对比、备份管理、性能监控。支持 SAP HANA Cloud 和本地部署。
+
+- **作者**：SAP SE
+- **项目主页**：[https://github.com/SAP-samples/hana-cli-claude-plugin](https://github.com/SAP-samples/hana-cli-claude-plugin)
+
+##### spanner
+**Cloud Spanner 集成**
+
+在 Claude Code 中通过自然语言连接和操作 Cloud Spanner 数据——Google 全球分布式关系数据库的查询、Schema 管理和性能优化。
+
+- **作者**：Google LLC
+- **项目主页**：[https://github.com/gemini-cli-extensions/spanner](https://github.com/gemini-cli-extensions/spanner)
+
+##### supabase
+**Supabase 开源 BaaS 平台**
+
+在 Claude Code 中管理 Supabase 项目、PostgreSQL 数据库、Row Level Security 安全策略、Edge Functions、Auth 认证和文件存储。支持 SQL 查询、RLS 策略调试和实时订阅。
+
+- **前置要求**：需配置 Supabase 项目 URL 和 API Key
+- **使用方法**：自然语言操作：编写/执行 SQL、调试 RLS 安全策略、编写/部署 Edge Functions、管理用户认证和存储桶。
+- **适用场景**：Supabase 全栈开发、PostgreSQL 管理、Serverless 应用。
+- **项目主页**：[https://github.com/supabase-community/supabase-plugin](https://github.com/supabase-community/supabase-plugin)
+
+##### vsql-extension-builder
+**VillageSQL MySQL 扩展构建器**
+
+通过 7 阶段角色驱动工作流端到端构建 MySQL 的 VillageSQL 扩展。常用场景是将 PostgreSQL 扩展移植到 MySQL。
+
+- **作者**：VillageSQL
+- **项目主页**：[https://villagesql.com](https://villagesql.com)
+
+##### zilliz
+**Zilliz Cloud 向量数据库管理**
+
+Zilliz Cloud 管理插件，包含 14 个技能——覆盖集群生命周期、Collection Schema 设计、向量搜索、索引调优、批量导入、RBAC 权限、备份和监控。Milvus 云服务的全方位管理工具。
+
+- **作者**：Zilliz
+- **项目主页**：[https://docs.zilliz.com](https://docs.zilliz.com)
+
+## 监控运维（monitoring）- 17 个
+
+##### amplitude
+**Amplitude 产品分析平台**
+
+将 Amplitude 作为专家分析师使用——打点规划、发现产品机会、分析图表、创建仪表板、管理实验、理解用户和账户行为。产品分析和增长实验的全功能工具箱。
+
+- **前置要求**：需配置 Amplitude API Key
+- **使用方法**：自然语言查询和分析产品数据、创建实验、生成洞察报告。
+- **适用场景**：产品分析、用户行为分析、A/B 测试与实验管理。
+- **项目主页**：[https://github.com/amplitude/mcp-marketplace](https://github.com/amplitude/mcp-marketplace)
+
+##### dash0
+**Dash0 OpenTelemetry 可观测性**
+
+Claude Code 会话的 OpenTelemetry 可观测性——将工具调用、LLM 调用、Token 用量和错误捕获为 OTel Traces。可将遥测数据发送到 Dash0 或任何兼容 OpenTelemetry 的后端。
+
+- **作者**：Dash0
+- **项目主页**：[https://dash0.com/](https://dash0.com/)
+
+##### datadog
+**Datadog 监控平台集成**
+
+通过预配置的 Datadog MCP 服务器在 Claude Code 中查询日志、指标、APM 追踪和仪表板，直接在开发环境进行生产监控。
+
+- **作者**：Datadog
+- **前置要求**：需配置 Datadog API Key
+- **使用方法**：自然语言查询 Datadog 日志、分析指标趋势、查看 APM 追踪、创建和修改仪表板。
+- **适用场景**：生产环境监控、性能分析、故障排查。
+- **项目主页**：[https://www.datadoghq.com/](https://www.datadoghq.com/)
+
+##### fullstory
+**Fullstory 行为分析与会话回放**
+
+将 Claude 连接到 Fullstory——查询行为分析、会话回放和客户体验洞察。在 Claude Code 中直接分析用户行为数据。
+
+- **作者**：Fullstory
+- **项目主页**：[https://www.fullstory.com](https://www.fullstory.com)
+
+##### grafana-assistant
+**Grafana Assistant 应用与 CLI**
+
+开发和使用的 Grafana Assistant 应用和 CLI 的技能与规则。在 Claude Code 中管理 Grafana 可观测性助手的全生命周期。
+
+- **作者**：Grafana
+- **项目主页**：[https://grafana.com](https://grafana.com)
+
+##### grafana-cloud-mcp
+**Grafana Cloud MCP（托管版，无需本地安装）**
+
+Grafana Cloud 可观测性的托管 MCP 服务器——无需本地安装即可在 Claude Code 中进行 AI 辅助的 Grafana Cloud 查询和管理。
+
+- **作者**：Grafana
+- **项目主页**：[https://grafana.com](https://grafana.com)
+
+##### grafana-mcp
+**Grafana MCP 集成**
+
+在 Claude Code 中进行 AI 辅助的 Grafana 仪表板、数据源、告警和事件管理——通过 MCP 服务器直接操作 Grafana 实例。
+
+- **作者**：Grafana
+- **前置要求**：需配置 Grafana 服务地址和 API Key
+- **使用方法**：自然语言查询和管理 Grafana 仪表板、数据源、告警规则和事件。
+- **适用场景**：可观测性管理、告警配置、仪表板自动化。
+- **项目主页**：[https://grafana.com](https://grafana.com)
+
+##### honeycomb
+**Honeycomb 可观测性平台**
+
+Honeycomb 可观测性的技能、Agent 和工作流——查询模式、生产环境调查、SLO 管理、OpenTelemetry 插桩和 Beeline 迁移。下一代可观测性平台的开发助手。
+
+- **作者**：Honeycomb
+- **项目主页**：[https://www.honeycomb.io](https://www.honeycomb.io)
+
+##### langfuse
+**Langfuse 开源 LLM 工程平台**
+
+Langfuse 技能包——LLM 追踪、提示管理和评估的开源平台。在 Claude Code 中查询 LLM 应用追踪数据、管理提示版本、运行实验评估。
+
+- **作者**：Langfuse
+- **前置要求**：需配置 Langfuse API Key
+- **使用方法**：自然语言查询 LLM 追踪数据、管理提示版本、运行评估、分析成本和性能。
+- **适用场景**：LLM 应用调试、提示工程、Token 成本追踪。
+- **项目主页**：[https://langfuse.com](https://langfuse.com)
+
+##### langfuse-observability
+**Langfuse × Claude Code 可观测性**
+
+Langfuse 与 Claude Code 的可观测性集成插件——自动追踪 Claude Code 中的 LLM 调用、Token 消耗和性能指标，发送到 Langfuse 平台进行分析和评估。
+
+- **作者**：Langfuse
+- **项目主页**：[https://langfuse.com/integrations/other/claude-code](https://langfuse.com/integrations/other/claude-code)
+
+##### logfire
+**Logfire Python 可观测性**
+
+为 Python 应用添加 Logfire 可观测性——自动插桩 FastAPI、httpx、asyncpg、SQLAlchemy 等主流库，提供结构化日志、分布式追踪和指标采集。Pydantic 团队出品。
+
+- **作者**：Pydantic
+- **前置要求**：需配置 Logfire Token，Python 3.8+
+- **使用方法**：自然语言为 Python 项目添加可观测性、配置追踪和指标采集、查询日志和性能数据。
+- **适用场景**：Python 应用监控、分布式追踪、性能分析。
+- **项目主页**：[https://github.com/pydantic/skills/tree/main/plugins/logfire](https://github.com/pydantic/skills/tree/main/plugins/logfire)
+
+##### logrocket
+**LogRocket 会话回放与分析**
+
+将 Claude Code 连接到 LogRocket——使用自然语言查询会话回放、指标、问题和用户行为。前端用户体验监控和调试的得力助手。
+
+- **作者**：LogRocket
+- **项目主页**：[https://logrocket.com](https://logrocket.com)
+
+##### pagerduty
+**PagerDuty 事故风险评分**
+
+通过 PagerDuty 风险评分和事故关联增强代码质量和安全性——在提交前对 Diff 与历史事故数据进行评分，在部署前发现风险。将事故管理左移到开发阶段。
+
+- **项目主页**：[https://github.com/PagerDuty/claude-code-plugins](https://github.com/PagerDuty/claude-code-plugins)
+
+##### posthog
+**PostHog 产品分析平台**
+
+在 Claude Code 中访问 PostHog 分析、Feature Flag、实验和错误追踪数据。产品分析、A/B 测试和用户行为分析的全功能平台。
+
+- **前置要求**：需配置 PostHog API Key
+- **使用方法**：查询产品分析数据、管理 Feature Flag、创建和分析 A/B 实验、查询错误追踪。
+- **适用场景**：产品分析、A/B 测试、Feature Flag 管理。
+- **项目主页**：[https://posthog.com/docs/model-context-protocol](https://posthog.com/docs/model-context-protocol)
+
+##### rootly
+**Rootly 事故管理全生命周期**
+
+全生命周期事故管理——部署安全检查、事故响应、On-Call 管理和回顾分析。在 Claude Code 中管理从部署到恢复的完整事故流程。
+
+- **作者**：Rootly
+- **项目主页**：[https://rootly.com](https://rootly.com)
+
+##### sentry
+**Sentry 错误监控集成**
+
+在 Claude Code 中访问 Sentry 错误报告、分析堆栈追踪、按 Fingerprint 搜索 Issue，在开发环境中直接调试生产错误。
+
+- **前置要求**：需配置 Sentry Auth Token
+- **使用方法**：自然语言查询和分析 Sentry 错误、追踪 Issue 频率、获取修复建议。
+- **适用场景**：生产错误监控、Bug 优先级排序、错误根因分析。
+- **项目主页**：[https://github.com/getsentry/plugin-claude](https://github.com/getsentry/plugin-claude)
+
+##### sentry-cli
+**Sentry CLI 命令行工具**
+
+使用 Sentry CLI 在命令行与 Sentry 交互的技能——管理 Release、上传 Source Map、配置告警规则。Sentry 的命令行操作工具包。
+
+- **作者**：Sentry
+- **项目主页**：[https://sentry.io](https://sentry.io)
+
+## 安全合规（security）- 12 个
+
+##### 42crunch-api-security-testing
+**42Crunch API 安全自动化测试**
+
+在 Claude Code 中自动化 API 安全测试——审计 OpenAPI 规范、检测符合 OWASP API Security 风险的漏洞（含 BOLA/BFLA）、应用 AI 修复方案。为 AI 辅助开发工作流提供持续安全护栏。
+
+- **作者**：42Crunch
+- **项目主页**：[https://42crunch.com](https://42crunch.com)
+
+##### auth0
+**Auth0 企业身份认证**
+
+企业级身份认证，简单实现——为任何应用添加 Login、SSO、MFA 和访问控制。提供框架感知的集成指导。身份认证的行业标准方案。
+
+- **作者**：Auth0
+- **项目主页**：[https://auth0.com](https://auth0.com)
+
+##### crowdstrike-falcon-foundry
+**CrowdStrike Falcon Foundry 安全开发**
+
+CrowdStrike Falcon Foundry 开发技能——在 Falcon 平台上构建网络安全应用。覆盖 UI 开发、Collections、Functions、Workflows、API 集成、安全模式和部署。
+
+- **作者**：CrowdStrike
+- **项目主页**：[https://github.com/CrowdStrike/foundry-skills](https://github.com/CrowdStrike/foundry-skills)
+
+##### duende-skills
+**Duende IdentityServer 安全开发**
+
+Duende 开发技能和 Agent——覆盖 OAuth/OIDC 协议、IdentityServer、Token 管理、ASP.NET Core 认证/授权、BFF 模式和安全身份架构。.NET 生态身份安全的权威指南。
+
+- **作者**：Duende Software
+- **项目主页**：[https://duendesoftware.com](https://duendesoftware.com)
+
+##### jfrog
+**JFrog DevOps 安全平台**
+
+在 Claude Code 中使用 JFrog 平台——Artifactory 仓库管理、安全发现和暴露分析、Catalog 包安全检查、SDLC 全流程工作流和平台管理。DevOps 供应链安全一体化方案。
+
+- **作者**：JFrog Ltd.
+- **项目主页**：[https://jfrog.com](https://jfrog.com)
+
+##### semgrep
+**Semgrep 实时代码安全扫描**
+
+在实时编辑中捕获代码中的安全漏洞，引导 Claude 从一开始就编写安全代码。SAST 静态分析的安全左移最佳实践。
+
+- **前置要求**：安装后自动生效
+- **使用方法**：自动扫描代码中的安全漏洞模式，在代码生成阶段即提供修复建议。
+- **适用场景**：安全编码、SAST 静态分析、漏洞预防。
+- **项目主页**：[https://github.com/semgrep/mcp-marketplace.git](https://github.com/semgrep/mcp-marketplace.git)
+
+##### sonarqube
+**SonarQube 代码质量与安全门禁**
+
+在 Agent 编码循环中自动执行 SonarQube 代码质量和安全规则——7000+ 条规则、密钥扫描、Agent 分析和质量门禁，覆盖 40+ 语言。通过 PostToolUse 钩子即时反馈代码质量问题。
+
+- **作者**：SonarSource
+- **前置要求**：需配置 SonarQube 服务器地址和 Token
+- **使用方法**：安装后自动通过钩子分析代码变更，即时反馈代码质量问题和安全漏洞。
+- **适用场景**：代码质量管控、安全漏洞扫描、技术债务管理。
+- **项目主页**：[https://www.sonarsource.com](https://www.sonarsource.com)
+
+##### sonatype-guide
+**Sonatype 供应链安全指南**
+
+Sonatype Guide MCP 服务器——软件供应链情报和依赖安全。分析依赖漏洞、获取安全版本推荐、检查组件质量指标。开源依赖安全的权威数据源。
+
+- **项目主页**：[https://github.com/sonatype/sonatype-guide-claude-plugin.git](https://github.com/sonatype/sonatype-guide-claude-plugin.git)
+
+##### vanta
+**Vanta 安全合规平台**
+
+Vanta 插件通过 MCP 服务器将 Claude Code 连接到 Vanta 安全和合规平台——结合 Vanta 的测试特定修复情报与本地仓库上下文。加速 SOC 2/ISO 27001/GDPR 等合规认证流程。
+
+- **作者**：Vanta
+- **项目主页**：[https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337](https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337)
+
+##### vanta-mcp-plugin
+**Vanta 安全合规 MCP**
+
+Vanta MCP 插件——连接 Claude Code 到 Vanta 安全合规平台。结合测试特定修复情报与本地代码上下文，加速合规认证流程。
+
+- **作者**：Vanta
+- **项目主页**：[https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337](https://help.vanta.com/en/articles/14094979-connecting-to-vanta-mcp#h_887ce3f337)
+
+##### workos
+**WorkOS 企业身份集成**
+
+WorkOS 集成技能——AuthKit、SSO、Directory Sync、RBAC、Vault、Audit Logs、迁移和 API 参考。企业级身份认证和授权的快速集成方案。
+
+- **作者**：WorkOS
+- **项目主页**：[https://workos.com](https://workos.com)
+
+##### zscaler
+**Zscaler 云安全平台管理**
+
+管理 Zscaler 云安全平台——ZPA（私有访问）、ZIA（互联网访问）、ZDX（数字体验）、ZCC（客户端连接器）、EASM（攻击面管理）和 Z-Insights（分析）。零信任安全的全平台管理。
+
+- **作者**：Zscaler
+- **项目主页**：[https://github.com/zscaler/zscaler-mcp-server](https://github.com/zscaler/zscaler-mcp-server)
+
+## 部署服务（deployment）- 8 个
+
+##### azure
+**Azure 云服务专家**
+
+将 Claude 转化为 Azure 专家——集成 Azure MCP 服务器和专用技能，执行真实的 Azure 资源管理：列出资源、部署应用、配置网络、管理存储。超越泛泛建议，直接操作 Azure 服务。
+
+- **前置要求**：需完成 Azure 登录认证
+- **使用方法**：自然语言列出/管理 Azure 资源、部署应用、配置网络、监控服务状态。
+- **适用场景**：Azure 云管理、应用部署、基础设施运维。
+- **项目主页**：[https://github.com/microsoft/azure-skills](https://github.com/microsoft/azure-skills)
+
+##### cloudflare
+**Cloudflare 开发者平台**
+
+Cloudflare Workers、Durable Objects、Agents SDK、MCP 服务器和 Wrangler CLI 的开发技能包，覆盖边缘计算和 Web 性能优化全产品线。
+
+- **前置要求**：需安装 Wrangler CLI
+- **使用方法**：自然语言创建和管理 Cloudflare Workers、配置 Durable Objects、部署 MCP 服务器到边缘网络、管理 DNS 和安全规则。
+- **适用场景**：边缘计算开发、CDN 配置、Serverless 部署、Web 安全防护。
+- **项目主页**：[https://github.com/cloudflare/skills](https://github.com/cloudflare/skills)
+
+##### deploy-on-aws
+**AWS 应用部署**
+
+将应用部署到 AWS，提供架构推荐、成本估算和 Infrastructure-as-Code 部署方案，支持一键生成 CloudFormation/CDK/Terraform 代码并执行部署。
+
+- **前置要求**：需配置 AWS Credentials
+- **使用方法**：自然语言描述应用需求，自动生成架构方案和部署代码，一键部署到 AWS。
+- **适用场景**：应用上云、架构选型、成本优化。
+- **项目主页**：[https://github.com/awslabs/agent-plugins](https://github.com/awslabs/agent-plugins)
+
+##### hostinger
+**Hostinger 网站与 VPS 管理**
+
+部署、管理和监控 Hostinger 服务——网站、域名、电商、邮件营销、订阅与支付、VPS 主机。支持浏览器 OAuth 或 API Token 两种认证方式。
+
+- **作者**：Hostinger
+- **项目主页**：[https://www.hostinger.com](https://www.hostinger.com)
+
+##### railway
+**Railway 部署平台**
+
+在 Railway 上部署和管理应用、数据库和基础设施——覆盖项目设置、部署、环境配置、网络、故障排查和监控全流程。
+
+- **项目主页**：[https://docs.railway.com/ai/claude-code-plugin](https://docs.railway.com/ai/claude-code-plugin)
+
+##### render
+**Render 部署平台**
+
+在 Render 上部署、调试和监控应用——包含 Skills、Agent、斜杠命令和 render.yaml 验证 Hook。支持 Web 服务/后台 Worker/Cron Job/静态站点等多种部署模式。
+
+- **作者**：Render
+- **项目主页**：[https://render.com](https://render.com)
+
+##### valtown
+**Val Town 构建与部署**
+
+在 Val Town 上构建和部署——集成 Val Town MCP 服务器和平台技能。覆盖 HTTP Val、Cron/Interval 定时任务、SQLite 数据库、邮件、OAuth、React UI 和第三方集成。
+
+- **作者**：Val Town
+- **项目主页**：[https://val.town](https://val.town)
+
+##### vercel
+**Vercel 部署平台集成**
+
+在 Claude Code 中管理 Vercel 部署、检查构建状态、访问日志、配置域名、管理环境变量，直接控制前端基础设施。支持 Next.js/Svelte/Nuxt 等框架一键部署。
+
+- **前置要求**：需完成 Vercel OAuth 授权
+- **使用方法**：自然语言操作：部署项目到 Vercel、查看构建日志、配置自定义域名、管理环境变量、查看部署历史。
+- **适用场景**：前端项目部署、Jamstack 应用、Edge Functions。
+- **项目主页**：[https://github.com/vercel/vercel-plugin](https://github.com/vercel/vercel-plugin)
+
+## 设计创意（design）- 6 个
+
+##### adobe-for-creativity
+**Adobe 创意工具套件**
+
+利用 Adobe 的 AI 创意工具——编辑图片、自动化设计工作流。从背景移除到矢量化到专业润饰，将创意构想变为现实。覆盖 Photoshop/Lightroom/Illustrator 等创意云工具。
+
+- **作者**：Adobe
+- **项目主页**：[https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity](https://github.com/adobe/skills/tree/main/plugins/creative-cloud/adobe-for-creativity)
+
+##### canva
+**Canva 设计平台集成**
+
+通过 Canva MCP 服务器创建、编辑、审查、调整尺寸和品牌检查 Canva 设计——在 Claude Code 中直接操作设计资产，支持团队模板和品牌资产管理。
+
+- **作者**：Canva
+- **前置要求**：需完成 Canva OAuth 授权
+- **使用方法**：自然语言创建和编辑 Canva 设计、调整尺寸、检查品牌一致性、导出设计。
+- **适用场景**：营销物料设计、社交媒体图片、品牌资产管理。
+- **项目主页**：[https://www.canva.com](https://www.canva.com)
+
+##### figma
+**Figma 设计平台集成**
+
+在 Claude Code 中访问 Figma 设计文件、提取组件信息、读取设计 Token、将设计翻译为代码，打通设计到开发的工作流。
+
+- **前置要求**：需配置 Figma Access Token
+- **使用方法**：自然语言查询 Figma 设计稿、提取颜色/字体/间距 Token、根据设计稿生成前端代码。
+- **适用场景**：设计稿转代码、设计系统管理、设计与开发协作。
+- **项目主页**：[https://github.com/figma/mcp-server-guide](https://github.com/figma/mcp-server-guide)
+
+##### hyperframes
+**HyperFrames by HeyGen 视频生成**
+
+HeyGen 出品的 HyperFrames——用 HTML 编写、渲染视频。支持合成、GSAP 和运行时适配器动画、字幕、语音合成、音频响应式视觉效果和网页转视频捕获。文本到视频的全新创作范式。
+
+- **作者**：HeyGen
+- **项目主页**：[https://hyperframes.heygen.com](https://hyperframes.heygen.com)
+
+##### miro
+**Miro 在线白板协作**
+
+安全访问 Miro 白板——AI 可读取白板上下文、创建图表、生成代码。提供企业级安全保障，支持思维导图、流程图、用户故事地图等模板。
+
+- **作者**：Miro
+- **项目主页**：[https://miro.com](https://miro.com)
+
+##### runway-api
+**Runway 视频生成 API**
+
+规模化视频生成——使用 Runway API 批量生成视频、图片和音频。支持批量广告素材、产品视频、多镜头故事和创意迭代。兼容 seedance2、gen4.5、veo3 和 Nano 等模型。
+
+- **作者**：Runway
+- **项目主页**：[https://runwayml.com](https://runwayml.com)
+
+## 学习教学（learning）- 1 个
+
+##### learn-with-coursera
+**Coursera 个性化学习**
+
+将任何学习意图转化为个性化 Coursera 体验——三个快速问题（主题、熟悉程度、偏好格式）后搜索 Coursera 目录，推荐合适的课程、专项课程或证书项目。在 Claude 中直接找到最佳学习资源。
+
+- **作者**：Coursera
+- **项目主页**：[https://github.com/coursera/skills](https://github.com/coursera/skills)
+
+## 位置服务（location）- 2 个
+
+##### amazon-location-service
+**Amazon Location Service 地图服务**
+
+引导开发者集成地图、地点搜索、地理编码、路线规划等地理空间功能——包含认证设置、SDK 集成和最佳实践。AWS 地图服务的完整开发指南。
+
+- **项目主页**：[https://github.com/awslabs/agent-plugins](https://github.com/awslabs/agent-plugins)
+
+##### mapbox
+**Mapbox 地图与位置服务**
+
+Mapbox 技能和 MCP 服务器——构建位置感知 AI 应用。包含地理空间工具、样式管理和 Web/iOS/Android/AI Agent 框架集成模式。全球领先的地图平台开发工具。
+
+- **作者**：Mapbox
+- **项目主页**：[https://www.mapbox.com](https://www.mapbox.com)
+
+## 自动化采集（automation）- 1 个
+
+##### zyte-web-data
+**Zyte Web 数据采集**
+
+基于 Zyte API 的网页抓取技能包——抓取网站、生成和运行 Scrapy 爬虫、定义数据提取 Schema，并部署到 Scrapy Cloud。支持反爬绕过和大规模数据采集，企业级网页数据平台。
+
+- **作者**：Zyte
+- **前置要求**：需配置 Zyte API Key
+- **使用方法**：/quickstart 快速启动抓取项目；自然语言描述抓取需求即可自动生成爬虫代码。
+- **适用场景**：网页数据采集、竞品监控、电商数据抓取。
+- **项目主页**：[https://www.zyte.com](https://www.zyte.com)
+
+## 迁移工具（migration）- 1 个
+
+##### aws-transform
+**AWS 代码迁移与现代化转换**
+
+将代码库迁移、现代化和升级到 AWS——.NET Framework → .NET 8/10、大型机 COBOL → Java、VMware VM → EC2、SQL Server → Aurora。以及 Java/Python/Node.js 版本和 AWS SDK 升级。持续现代化的一站式工具。
+
+- **作者**：Amazon Web Services
+- **项目主页**：[https://github.com/awslabs/agent-plugins](https://github.com/awslabs/agent-plugins)
+
+## 未分类（uncategorized）- 14 个
+
+##### ai-plugins
+**Endor Labs 软件供应链安全**
+
+设置 endorctl 并使用 Endor Labs 扫描、优先级排序和修复软件供应链中的安全风险。依赖安全、许可证合规和代码安全的统一管理方案。
+
+- **项目主页**：[https://www.endorlabs.com](https://www.endorlabs.com)
+
+##### aikido
+**Aikido 安全扫描（SAST + 密钥 + IaC）**
+
+Aikido Security Claude Code 扫描——SAST 静态分析、密钥检测和 IaC 漏洞检测。通过 Aikido MCP 服务器驱动。中小团队的轻量级安全方案。
+
+- **项目主页**：[https://github.com/AikidoSec/aikido-claude-plugin](https://github.com/AikidoSec/aikido-claude-plugin)
+
+##### atlan
+**Atlan 数据目录平台**
+
+Atlan 数据目录 Claude Code 插件——通过自然语言搜索、探索、治理和管理数据资产。基于 Atlan MCP 服务器，支持语义搜索、血缘追踪、术语表管理和数据质量规则。
+
+- **项目主页**：[https://docs.atlan.com/](https://docs.atlan.com/)
+
+##### brightdata-plugin
+**Bright Data 网页数据采集平台**
+
+由 Bright Data 驱动的网页抓取、Google 搜索、结构化数据提取和 MCP 服务器集成。包含 7 个技能：抓取网页为 Markdown（含反爬/CAPTCHA 绕过）、Google 搜索返回结构化 JSON、提取数据等。企业级数据采集方案。
+
+- **项目主页**：[https://docs.brightdata.com](https://docs.brightdata.com)
+
+##### build-with-wordpress
+**WordPress 建站与开发**
+
+构建生产级 WordPress 站点和应用——从主题和插件开发到电商和部署。覆盖 WordPress 全场景开发。WordPress.com 官方出品。
+
+- **项目主页**：[https://developer.wordpress.com/wordpress-com-claude-code-plugin/](https://developer.wordpress.com/wordpress-com-claude-code-plugin/)
+
+##### cloudinary
+**Cloudinary 媒体资产管理**
+
+在 Claude 中直接使用 Cloudinary——管理资产、应用变换、优化媒体。全部通过自然对话完成。图片和视频管理的云端一体化方案。
+
+- **项目主页**：[https://cloudinary.com/documentation](https://cloudinary.com/documentation)
+
+##### data-engineering
+**数据工程通用插件**
+
+数据工程插件——数据仓库探索、Pipeline 编写和 Airflow 集成。数据工程师的日常开发辅助工具。
+
+- **项目主页**：[https://github.com/astronomer/agents](https://github.com/astronomer/agents)
+
+##### fastly-agent-toolkit
+**Fastly 边缘计算工具包**
+
+Fastly 开发工具和平台技能——边缘计算、CDN 配置和安全防护的开发辅助工具包。
+
+- **项目主页**：[https://github.com/fastly/fastly-agent-toolkit/blob/main/README.md](https://github.com/fastly/fastly-agent-toolkit/blob/main/README.md)
+
+##### fiftyone
+**FiftyOne 计算机视觉数据平台**
+
+构建高质量数据集和计算机视觉模型——可视化数据集、分析模型、查找重复、运行推理、评估预测和开发自定义插件。Voxel51 出品的开源 CV 数据管理工具。
+
+- **项目主页**：[https://docs.voxel51.com/](https://docs.voxel51.com/)
+
+##### nightvision
+**NightVision DAST 动态安全测试**
+
+NightVision 技能——DAST 和 API Discovery 平台，发现 Web 应用和 REST API 中的可被利用的漏洞。动态应用安全测试的自动化工具。
+
+- **项目主页**：[https://github.com/nvsecurity/nightvision-skills](https://github.com/nvsecurity/nightvision-skills)
+
+##### nimble
+**Nimble Web 数据工具包**
+
+Nimble Web 数据工具包——搜索、提取、映射、爬取网页。使用结构化数据 Agent 处理 Web 数据。敏捷的网页数据采集方案。
+
+- **项目主页**：[https://docs.nimbleway.com/integrations/agent-skills/plugin-installation](https://docs.nimbleway.com/integrations/agent-skills/plugin-installation)
+
+##### postiz
+**Postiz 社交媒体自动化**
+
+社交媒体自动化 CLI——在 28+ 平台上安排帖子、管理集成、上传媒体和追踪分析。包括 X、LinkedIn、Reddit、YouTube、TikTok、Instagram 等。开源社交媒体管理工具。
+
+- **项目主页**：[https://postiz.com/agent](https://postiz.com/agent)
+
+##### prisma
+**Prisma ORM 数据库管理**
+
+Prisma MCP 集成——Postgres 数据库管理、Schema 迁移、SQL 查询和连接字符串管理。创建 Prisma Postgres 数据库、运行迁移、直接操作数据。Node.js/TypeScript 生态首选 ORM。
+
+- **项目主页**：[https://prisma.io](https://prisma.io)
+
+##### remember
+**Remember 持续记忆**
+
+Claude Code 的持续记忆——提取、总结和压缩对话到分级每日日志中。Claude 会记住你昨天做了什么，实现跨会话的上下文连续性。
+
+- **项目主页**：[https://github.com/Digital-Process-Tools/claude-remember](https://github.com/Digital-Process-Tools/claude-remember)
+
+
+---
+
+## 相关页面
+- [[Settings 文件]]
+- [[Agent Skills]]
+- [[Memory 文件]]
+- [[superpowers使用]]
+- [[工作流插件对比]]
+
